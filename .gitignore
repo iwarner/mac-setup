@@ -1,0 +1,11 @@
+## MAC
+
+.DS_Store
+
+## Gems
+
+Gemfile.lock
+
+## Remove Directories
+
+tmp/

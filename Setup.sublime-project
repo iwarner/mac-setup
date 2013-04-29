@@ -1,0 +1,18 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"*.sublime-*",
+				"Gemfile.lock"
+			],
+			"name": "Setup",
+			"path": "~/Dropbox/Service Files/Server Local/Setup"
+		},
+		{
+			"name": "Service Files",
+			"path": "~/Dropbox/Service Files"
+		}
+	]
+}
