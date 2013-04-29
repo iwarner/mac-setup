@@ -3,6 +3,19 @@
 These set of scripts are used at DryKiss to create a stable and consistent
 development maching.
 
+## Appreciation
+
+If you like using this script and want to Flattr it please do so.
+
+Submitting pull requests though and joining the community is appreciated just as much.
+
+[![Flattr this][2]][1]
+
+[1]: https://flattr.com/submit/auto?user_id=drykiss&url=https://github.com/DryKiss/mac-setup&title=Mac+OSX+Development+Scripts&language=English&tags=github,bash,mac,osx,development&category=software
+[2]: http://api.flattr.com/button/flattr-badge-large.png
+
+Thank you.
+
 ## Requirements
 
 The lastest XCode must be installed before initiaiting these scripts
@@ -38,8 +51,8 @@ Edit the dotfiles file with your specific details i.e. .gitconfig username and e
 
 ## Todo
 
-[Todo][TODO.md]
+[Todo](TODO.md)
 
 ## Changelog
 
-[Changelog][CHANGELOG.md]
+[Changelog](CHANGELOG.md)
