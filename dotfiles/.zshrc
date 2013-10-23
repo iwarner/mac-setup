@@ -8,11 +8,12 @@
 ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load - Look in ~/.oh-my-zsh/themes/
-ZSH_THEME="af-magic"
+ZSH_THEME="powerline"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
 
 # Set this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -42,10 +43,10 @@ ZSH_THEME="af-magic"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=( git )
 
 source $ZSH/oh-my-zsh.sh
 
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+if which rbenv > /dev/null; then eval "$(rbenv init - --no-rehash)"; fi

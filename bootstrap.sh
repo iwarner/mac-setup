@@ -37,7 +37,6 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until `.osx` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-
 # Ask user if they wish to continue
 
 log "Continue? (y/Y)"
@@ -49,31 +48,31 @@ if [[ $CONTINUE == y || $CONTINUE == Y ]] ; then
 
     # Check XCODE and Command Line Tools are installed - GCC
 
-    # . "$BASH_PATH"/recipes/settings/gcc/install.sh
+    . "$BASH_PATH"/recipes/settings/gcc/install.sh
 
     # Install HomeBrew
 
-    # . "$BASH_PATH"/recipes/applications/homebrew/install.sh
+    . "$BASH_PATH"/recipes/applications/homebrew/install.sh
 
     # Install Git
 
-    # . "$BASH_PATH"/recipes/applications/git/install.sh
+    . "$BASH_PATH"/recipes/applications/git/install.sh
 
     # Install RBENV
 
-    # . "$BASH_PATH"/recipes/applications/rbenv/install.sh
+    . "$BASH_PATH"/recipes/applications/rbenv/install.sh
 
     # Install ZSH
 
-    # . "$BASH_PATH"/recipes/applications/zsh/install.sh
+    . "$BASH_PATH"/recipes/applications/zsh/install.sh
 
     # Install Oh My ZSH
 
-    # . "$BASH_PATH"/recipes/applications/oh_my_zsh/install.sh
+    . "$BASH_PATH"/recipes/applications/oh_my_zsh/install.sh
 
     # Install Sublime
 
-    # . "$BASH_PATH"/recipes/applications/sublime_text/install.sh
+    . "$BASH_PATH"/recipes/applications/sublime_text/install.sh
 
     # Install Google Chrome
 
@@ -81,27 +80,35 @@ if [[ $CONTINUE == y || $CONTINUE == Y ]] ; then
 
     # Install MySQL
 
-    # . "$BASH_PATH"/recipes/applications/mysql/install.sh
+    . "$BASH_PATH"/recipes/applications/mysql/install.sh
 
     # Install PHP
 
-    # . "$BASH_PATH"/recipes/applications/php/install.sh
+    . "$BASH_PATH"/recipes/applications/php/install.sh
 
     # Configure SSH
 
-    # . "$BASH_PATH"/recipes/settings/ssh/install.sh
+    . "$BASH_PATH"/recipes/settings/ssh/install.sh
 
     # ITunes Settings
 
-    # . "$BASH_PATH"/recipes/settings/itunes/install.sh
+    . "$BASH_PATH"/recipes/settings/itunes/install.sh
 
     # Configure required Gems
 
-    # . "$BASH_PATH"/recipes/settings/gems/install.sh
+    . "$BASH_PATH"/recipes/settings/gems/install.sh
+
+    # Configure required NPM
+
+    . "$BASH_PATH"/recipes/settings/npm/install.sh
+
+    # Configure Hosts File
+
+    . "$BASH_PATH"/recipes/settings/hosts/install.sh
 
     # Configure OSX Defaults
 
-    # . "$BASH_PATH"/recipes/settings/osx/install.sh
+    . "$BASH_PATH"/recipes/settings/osx/install.sh
 
     # Exit Script
 

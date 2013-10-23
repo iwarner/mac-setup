@@ -42,7 +42,7 @@ function subheader ()
 
 # Log Right
 
-function log()
+function log ()
 {
     STATUSCOLOR=""
     COL=""

@@ -18,6 +18,7 @@ if [ -d ~/.ssh ] ; then
     rm -R ~/.ssh
 fi
 
+# SymLink Folder and Change Permissions
+
 ln -s ~/Dropbox/Service\ Files/Server\ Local/SSH ~/.ssh
-ln -s ~/.ssh ~/ssh
 chmod -R 0700 ~/Dropbox/Service\ Files/Server\ Local/ssh/*

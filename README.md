@@ -1,7 +1,7 @@
 # INTRODUCTION
 
 These set of scripts are used at DryKiss to create a stable and consistent
-development maching.
+development machine.
 
 ## Appreciation
 
@@ -18,11 +18,11 @@ Thank you.
 
 ## Requirements
 
-The lastest XCode must be installed before initiaiting these scripts
+The latest XCode must be installed before initiating these scripts
 
 The script assume an install directory of
 
-    $ cd ~"/Dropbox/Server Files/Server Local/Setup"
+    $ cd ~"/Dropbox/Service Files/Server Local/Setup"
 
 Please create this directory and then git clone the repository
 

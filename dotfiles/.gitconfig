@@ -2,8 +2,15 @@
 #                                                                    #
 # .gitconfig DotFile                                                 #
 #                                                                    #
+# https://help.github.com/articles/dealing-with-line-endings         #
+#                                                                    #
 ######################################################################
 
 [user]
+
     name  = Ian Warner
     email = ian.warner@drykiss.com
+
+[core]
+
+    autocrlf = input

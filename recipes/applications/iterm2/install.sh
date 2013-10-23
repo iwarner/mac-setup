@@ -2,15 +2,10 @@
 
 ######################################################################
 #                                                                    #
-# ZSH Recipe                                                         #
+# ITerm2                                                             #
 #                                                                    #
 ######################################################################
 
-header "Instal ZSH Shell"
+header "ITerm2 Installation Script"
 
-brew update
-brew install zsh
-
-# Set the default shell
-
-chsh -s /usr/local/bin/zsh $USER
+# http://www.iterm2.com/nightly/latest

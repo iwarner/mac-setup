@@ -2,7 +2,7 @@
 
 ######################################################################
 #                                                                    #
-# Hosts File                                                         #
+# iTunes Symlink                                                     #
 #                                                                    #                                                                    #
 ######################################################################
 
@@ -11,7 +11,7 @@ header "ITunes Symlink"
 subheader "Remove User Default ITunes Folder"
 
 if [ -d ~/Music/ITunes ] ; then
-    rm -r ~/Music/Itunes
+    sudo rm -r ~/Music/Itunes
 fi
 
 subheader "Link ITunes from Dropbox"

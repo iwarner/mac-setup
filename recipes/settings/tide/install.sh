@@ -2,15 +2,12 @@
 
 ######################################################################
 #                                                                    #
-# ZSH Recipe                                                         #
+# Tide SDK Settings                                                  #
 #                                                                    #
 ######################################################################
 
-header "Instal ZSH Shell"
+header "Tide SDK Configuration"
 
-brew update
-brew install zsh
+log "Symlink tidebuilder to /usr/bin"
 
-# Set the default shell
-
-chsh -s /usr/local/bin/zsh $USER
+ln -s ~/Library/Application\ Support/TideSDK/sdk/osx/1.3.1-beta/tidebuilder.py /usr/bin
