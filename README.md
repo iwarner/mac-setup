@@ -1,17 +1,58 @@
-This README.md file is displayed on your project page. You should edit this 
-file to describe your project, including instructions for building and 
-running the project, pointers to the license under which you are making the 
-project available, and anything else you think would be useful for others to
-know.
+# INTRODUCTION
 
-We have created an empty license.txt file for you. Well, actually, it says,
-"<Replace this text with the license you've chosen for your project.>" We 
-recommend you edit this and include text for license terms under which you're
-making your code available. A good resource for open source licenses is the 
-[Open Source Initiative](http://opensource.org/).
+These set of scripts are used at DryKiss to create a stable and consistent
+development machine.
 
-Be sure to update your project's profile with a short description and 
-eye-catching graphic.
+## Appreciation
 
-Finally, consider defining a timeline and work items on the "Current Work" tab 
-to give interested developers a sense of your cadence and upcoming enhancements.
+If you like using this script and want to Flattr it please do so.
+
+Submitting pull requests though and joining the community is appreciated just as much.
+
+[![Flattr this][2]][1]
+
+[1]: https://flattr.com/submit/auto?user_id=drykiss&url=https://github.com/DryKiss/mac-setup&title=Mac+OSX+Development+Scripts&language=English&tags=github,bash,mac,osx,development&category=software
+[2]: http://api.flattr.com/button/flattr-badge-large.png
+
+Thank you.
+
+## Requirements
+
+The latest XCode must be installed before initiating these scripts
+
+The script assume an install directory of
+
+    $ cd ~"/Google\ Drive/Service Files/Server Local/Setup"
+
+Please create this directory and then git clone the repository
+
+    $ mkdir -p ~/Google\ Drive/Server\ Files/Server\ Local/
+    $ git clone git@github.com:DryKiss/mac-setup.git ~/Google\ Drive/Server\ Files/Server\ Local/Setup
+
+## Usage
+
+Make sure the bootstrap.sh is executable
+
+    $ cd ~"/Google\ Drive/Server Files/Server Local/Setup"
+    $ chmod u+x ./bootstrap.sh
+
+Edit the script to uncomment the items that need installing, leaving everything
+uncommented should be fine as there are checks to see if items are already configured.
+
+    $ cd ~"/Google\ Drive/Server Files/Server Local/Setup"
+    $ ./bootstrap.sh
+
+Dotfiles should be edited here; or appended too when other programs edit them.
+As running this script will overwrite them
+
+## Configuration
+
+Edit the dotfiles file with your specific details i.e. .gitconfig username and email.
+
+## Todo
+
+[Todo](TODO.md)
+
+## Changelog
+
+[Changelog](CHANGELOG.md)
