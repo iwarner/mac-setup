@@ -1,0 +1,263 @@
+##
+# Host Database
+#
+# Localhost is used to configure the loopback interface
+# when the system is booting. Do not change this entry.
+##
+127.0.0.1       localhost
+255.255.255.255 broadcasthost
+::1             localhost
+fe80::1%lo0     localhost
+
+# DryKISS
+127.0.0.1 local.aseancompare.com            # ENOM 7/22/2014
+127.0.0.1 local.availabletowork.com         # ENOM 6/5/2016
+127.0.0.1 local.bfcvagabonds.com            # EASILY 11 Jan 2016
+127.0.0.1 local.civonyworld.com             # ENOM 4/29/2014
+127.0.0.1 local.classicpcgames.com          # ENOM 12/11/2018
+127.0.0.1 local.classicps3games.com         # ENOM 1/29/2015
+127.0.0.1 local.classicpspgames.com         # EASILY 20 Apr 2016
+127.0.0.1 local.classicxbox360games.com     # EASILY 20 Apr 2016
+127.0.0.1 local.classicxboxgames.com        # EASILY 10 Jan 2015
+127.0.0.1 local.codeblender.net             # ENOM 3/3/2014
+127.0.0.1 local.corporate-mobile.com        # EASILY 11 Jan 2016
+127.0.0.1 local.customuniformwarehouse.com  # ENOM 6/9/2014
+127.0.0.1 local.dontpoisonmyskin.com        # ENOM 5/1/2014
+127.0.0.1 local.drykiss.com                 # ENOM 2/16/2014
+127.0.0.1 local.foodiejapan.com             # ENOM 1/18/2015
+127.0.0.1 local.ianwarner.com               # EASILY 26 Jul 2016
+127.0.0.1 local.ichitty.com                 # ENOM 11/23/2014
+127.0.0.1 local.matchtheworld.com           # ENOM 1/26/2017
+127.0.0.1 local.neighbourslive.com          # ENOM 5/20/2014
+127.0.0.1 local.onlyasmile.com              # ENOM 10/12/2014
+127.0.0.1 local.phpcodingstandards.com      # EASILY 11 Nov 2015
+127.0.0.1 local.phpfinances.com             # EASILY 20 Apr 2016
+127.0.0.1 local.phpmultiplenewsletters.com  # EASILY 21 Sep 2016
+127.0.0.1 local.phpsupporttickets.com       # EASILY 21 Aug 2016
+127.0.0.1 local.phptasks.com                # EASILY 20 Apr 2016
+127.0.0.1 local.sayonarasale.net            # EASILY 22 Mar 2016
+127.0.0.1 local.solarmaticdigital.com       # ENOM 1/19/2015
+127.0.0.1 local.tomodachisaikai.com         # EASILY 11 Mar 2015
+127.0.0.1 local.torrenttracker.org          # EASILY 11 Feb 2015
+127.0.0.1 local.triangle-solutions.com      # EASILY 26 Jul 2016
+127.0.0.1 local.brazilsoccername.triangle-solutions.com
+127.0.0.1 local.eveonline.triangle-solutions.com
+127.0.0.1 local.lovefootball.triangle-solutions.com
+127.0.0.1 local.tipsstar.triangle-solutions.com
+127.0.0.1 local.wiki.triangle-solutions.com
+127.0.0.1 local.zingo.triangle-solutions.com
+127.0.0.1 local.yofone.net                  # ENOM 3/11/2015
+
+# FOOTY JAPAN
+127.0.0.1 local.british-football-academy.com
+127.0.0.1 local.centrecircle.net
+127.0.0.1 local.footyjapancompetitions.com
+127.0.0.1 local.admin.footyjapancompetitions.com
+127.0.0.1 local.metropolis-league.com
+
+# SMALL BACK ROOM
+127.0.0.1 local.liveculture.tv
+
+# RAZORFISH
+127.0.0.1 bbcc.com.dev
+127.0.0.1 bbmchallenge.blackberry.com.dev
+127.0.0.1 bbmchallengeservice.blackberry.com.dev
+127.0.0.1 service.com.dev
+
+# TOKYO PHYSIO
+127.0.0.1 www.tokyophysio.com.dev
+
+# These are windows host file entries to block Adobe CS5 & CS6 online product activation.
+# Removed all outdated hosts + sorted alphabetically. Updated: 12:01PM EST - 1/1/2013
+# (Can't save your host file? Right click on hosts file. Then Goto properties -> Security Tab...
+# -> Select the username your logged into -> Click Edit -> Allow full access -> OK & CLOSE...
+# -> When you're finished editing host file...switch it back to read-only properties.
+# Simply place all of these entries into your host file..it's pretty simple!
+# START - BLOCK ADOBE PRODUCT ONLINE ACTIVATION VIA HOST FILE
+
+127.0.0.1 209-34-83-73.ood.opsource.net
+127.0.0.1 3dns-1.adobe.com
+127.0.0.1 3dns-2.adobe.com
+127.0.0.1 3dns-2.adobe.de
+127.0.0.1 3dns-3.adobe.com
+127.0.0.1 3dns-3.adobe.de
+127.0.0.1 3dns-4.adobe.com
+127.0.0.1 3dns-5.adobe.com
+127.0.0.1 3dns.adobe.com
+127.0.0.1 a125-252-224-90.deploy.akamaitechnologies.com
+127.0.0.1 a125-252-224-91.deploy.akamaitechnologies.com
+127.0.0.1 activate-sea.adobe.com
+127.0.0.1 activate-sea.adobe.de
+127.0.0.1 activate-sjc0.adobe.com
+127.0.0.1 activate-sjc0.adobe.de
+127.0.0.1 activate.adobe.com
+127.0.0.1 activate.adobe.de
+127.0.0.1 activate.nero.com
+127.0.0.1 activate.nero.de
+127.0.0.1 activate.wip.adobe.com
+127.0.0.1 activate.wip1.adobe.com
+127.0.0.1 activate.wip2.adobe.com
+127.0.0.1 activate.wip3.adobe.com
+127.0.0.1 activate.wip3.adobe.de
+127.0.0.1 activate.wip4.adobe.com
+127.0.0.1 adobe-dns-1.adobe.com
+127.0.0.1 adobe-dns-2.adobe.com
+127.0.0.1 adobe-dns-2.adobe.de
+127.0.0.1 adobe-dns-3.adobe.com
+127.0.0.1 adobe-dns-3.adobe.de
+127.0.0.1 adobe-dns-4.adobe.com
+127.0.0.1 adobe-dns-4.adobe.com
+127.0.0.1 adobe-dns-5.adobe.com
+127.0.0.1 adobe-dns.adobe.com
+127.0.0.1 adobe-dns.adobe.de
+127.0.0.1 adobe.activate.com
+127.0.0.1 adobeereg.com
+127.0.0.1 ereg.adobe.com
+127.0.0.1 ereg.adobe.de
+127.0.0.1 ereg.wip.adobe.com
+127.0.0.1 ereg.wip1.adobe.com
+127.0.0.1 ereg.wip2.adobe.com
+127.0.0.1 ereg.wip3.adobe.com
+127.0.0.1 ereg.wip3.adobe.de
+127.0.0.1 ereg.wip4.adobe.com
+127.0.0.1 hh-software.com
+127.0.0.1 hl2rcv.adobe.com
+127.0.0.1 hl2rcv.adobe.de
+127.0.0.1 ood.opsource.net
+127.0.0.1 practivate.adobe
+127.0.0.1 practivate.adobe.com
+127.0.0.1 practivate.adobe.de
+127.0.0.1 practivate.adobe.newoa
+127.0.0.1 t3dns.adobe.com
+127.0.0.1 tpractivate.adobe.newoa
+127.0.0.1 wip.adobe.com
+127.0.0.1 wip1.adobe.com
+127.0.0.1 wip2.adobe.com
+127.0.0.1 wip3.adobe.com
+127.0.0.1 wip3.adobe.de
+127.0.0.1 wip4.adobe.com
+127.0.0.1 wwis-dubc1-vip100.adobe.com
+127.0.0.1 wwis-dubc1-vip101.adobe.com
+127.0.0.1 wwis-dubc1-vip102.adobe.com
+127.0.0.1 wwis-dubc1-vip103.adobe.com
+127.0.0.1 wwis-dubc1-vip104.adobe.com
+127.0.0.1 wwis-dubc1-vip105.adobe.com
+127.0.0.1 wwis-dubc1-vip106.adobe.com
+127.0.0.1 wwis-dubc1-vip107.adobe.com
+127.0.0.1 wwis-dubc1-vip108.adobe.com
+127.0.0.1 wwis-dubc1-vip109.adobe.com
+127.0.0.1 wwis-dubc1-vip110.adobe.com
+127.0.0.1 wwis-dubc1-vip111.adobe.com
+127.0.0.1 wwis-dubc1-vip112.adobe.com
+127.0.0.1 wwis-dubc1-vip113.adobe.com
+127.0.0.1 wwis-dubc1-vip114.adobe.com
+127.0.0.1 wwis-dubc1-vip115.adobe.com
+127.0.0.1 wwis-dubc1-vip116.adobe.com
+127.0.0.1 wwis-dubc1-vip117.adobe.com
+127.0.0.1 wwis-dubc1-vip118.adobe.com
+127.0.0.1 wwis-dubc1-vip119.adobe.com
+127.0.0.1 wwis-dubc1-vip120.adobe.com
+127.0.0.1 wwis-dubc1-vip121.adobe.com
+127.0.0.1 wwis-dubc1-vip122.adobe.com
+127.0.0.1 wwis-dubc1-vip123.adobe.com
+127.0.0.1 wwis-dubc1-vip124.adobe.com
+127.0.0.1 wwis-dubc1-vip125.adobe.com
+127.0.0.1 wwis-dubc1-vip30.adobe.com
+127.0.0.1 wwis-dubc1-vip31.adobe.com
+127.0.0.1 wwis-dubc1-vip32.adobe.com
+127.0.0.1 wwis-dubc1-vip33.adobe.com
+127.0.0.1 wwis-dubc1-vip34.adobe.com
+127.0.0.1 wwis-dubc1-vip35.adobe.com
+127.0.0.1 wwis-dubc1-vip36.adobe.com
+127.0.0.1 wwis-dubc1-vip37.adobe.com
+127.0.0.1 wwis-dubc1-vip38.adobe.com
+127.0.0.1 wwis-dubc1-vip39.adobe.com
+127.0.0.1 wwis-dubc1-vip40.adobe.com
+127.0.0.1 wwis-dubc1-vip41.adobe.com
+127.0.0.1 wwis-dubc1-vip42.adobe.com
+127.0.0.1 wwis-dubc1-vip43.adobe.com
+127.0.0.1 wwis-dubc1-vip44.adobe.com
+127.0.0.1 wwis-dubc1-vip45.adobe.com
+127.0.0.1 wwis-dubc1-vip46.adobe.com
+127.0.0.1 wwis-dubc1-vip47.adobe.com
+127.0.0.1 wwis-dubc1-vip48.adobe.com
+127.0.0.1 wwis-dubc1-vip49.adobe.com
+127.0.0.1 wwis-dubc1-vip50.adobe.com
+127.0.0.1 wwis-dubc1-vip51.adobe.com
+127.0.0.1 wwis-dubc1-vip52.adobe.com
+127.0.0.1 wwis-dubc1-vip53.adobe.com
+127.0.0.1 wwis-dubc1-vip54.adobe.com
+127.0.0.1 wwis-dubc1-vip55.adobe.com
+127.0.0.1 wwis-dubc1-vip56.adobe.com
+127.0.0.1 wwis-dubc1-vip57.adobe.com
+127.0.0.1 wwis-dubc1-vip58.adobe.com
+127.0.0.1 wwis-dubc1-vip59.adobe.com
+127.0.0.1 wwis-dubc1-vip60.adobe.com
+127.0.0.1 wwis-dubc1-vip60.adobe.de
+127.0.0.1 wwis-dubc1-vip61.adobe.com
+127.0.0.1 wwis-dubc1-vip62.adobe.com
+127.0.0.1 wwis-dubc1-vip63.adobe.com
+127.0.0.1 wwis-dubc1-vip64.adobe.com
+127.0.0.1 wwis-dubc1-vip65.adobe.com
+127.0.0.1 wwis-dubc1-vip66.adobe.com
+127.0.0.1 wwis-dubc1-vip67.adobe.com
+127.0.0.1 wwis-dubc1-vip68.adobe.com
+127.0.0.1 wwis-dubc1-vip69.adobe.com
+127.0.0.1 wwis-dubc1-vip70.adobe.com
+127.0.0.1 wwis-dubc1-vip71.adobe.com
+127.0.0.1 wwis-dubc1-vip72.adobe.com
+127.0.0.1 wwis-dubc1-vip73.adobe.com
+127.0.0.1 wwis-dubc1-vip74.adobe.com
+127.0.0.1 wwis-dubc1-vip75.adobe.com
+127.0.0.1 wwis-dubc1-vip76.adobe.com
+127.0.0.1 wwis-dubc1-vip77.adobe.com
+127.0.0.1 wwis-dubc1-vip78.adobe.com
+127.0.0.1 wwis-dubc1-vip79.adobe.com
+127.0.0.1 wwis-dubc1-vip80.adobe.com
+127.0.0.1 wwis-dubc1-vip80.adobe.com
+127.0.0.1 wwis-dubc1-vip81.adobe.com
+127.0.0.1 wwis-dubc1-vip81.adobe.com
+127.0.0.1 wwis-dubc1-vip82.adobe.com
+127.0.0.1 wwis-dubc1-vip82.adobe.com
+127.0.0.1 wwis-dubc1-vip83.adobe.com
+127.0.0.1 wwis-dubc1-vip83.adobe.com
+127.0.0.1 wwis-dubc1-vip84.adobe.com
+127.0.0.1 wwis-dubc1-vip84.adobe.com
+127.0.0.1 wwis-dubc1-vip85.adobe.com
+127.0.0.1 wwis-dubc1-vip85.adobe.com
+127.0.0.1 wwis-dubc1-vip86.adobe.com
+127.0.0.1 wwis-dubc1-vip86.adobe.com
+127.0.0.1 wwis-dubc1-vip87.adobe.com
+127.0.0.1 wwis-dubc1-vip87.adobe.com
+127.0.0.1 wwis-dubc1-vip88.adobe.com
+127.0.0.1 wwis-dubc1-vip88.adobe.com
+127.0.0.1 wwis-dubc1-vip89.adobe.com
+127.0.0.1 wwis-dubc1-vip89.adobe.com
+127.0.0.1 wwis-dubc1-vip90.adobe.com
+127.0.0.1 wwis-dubc1-vip90.adobe.com
+127.0.0.1 wwis-dubc1-vip91.adobe.com
+127.0.0.1 wwis-dubc1-vip91.adobe.com
+127.0.0.1 wwis-dubc1-vip92.adobe.com
+127.0.0.1 wwis-dubc1-vip92.adobe.com
+127.0.0.1 wwis-dubc1-vip93.adobe.com
+127.0.0.1 wwis-dubc1-vip93.adobe.com
+127.0.0.1 wwis-dubc1-vip94.adobe.com
+127.0.0.1 wwis-dubc1-vip94.adobe.com
+127.0.0.1 wwis-dubc1-vip95.adobe.com
+127.0.0.1 wwis-dubc1-vip95.adobe.com
+127.0.0.1 wwis-dubc1-vip96.adobe.com
+127.0.0.1 wwis-dubc1-vip96.adobe.com
+127.0.0.1 wwis-dubc1-vip97.adobe.com
+127.0.0.1 wwis-dubc1-vip97.adobe.com
+127.0.0.1 wwis-dubc1-vip98.adobe.com
+127.0.0.1 wwis-dubc1-vip98.adobe.com
+127.0.0.1 wwis-dubc1-vip99.adobe.com
+127.0.0.1 www.adobeereg.com
+127.0.0.1 www.hh-software.com
+127.0.0.1 www.wip.adobe.com
+127.0.0.1 www.wip1.adobe.com
+127.0.0.1 www.wip2.adobe.com
+127.0.0.1 www.wip3.adobe.com
+127.0.0.1 www.wip4.adobe.com
+
+# END - BLOCK ADOBE PRODUCT ONLINE ACTIVATION VIA HOST FILE

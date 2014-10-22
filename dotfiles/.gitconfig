@@ -1,0 +1,40 @@
+################################################################################
+#                                                                              #
+# .gitconfig DotFile                                                           #
+#                                                                              #
+# https://help.github.com/articles/dealing-with-line-endings                   #
+# https://github.com/wilmoore/dotfiles/blob/master/active/.config/git/config   #
+#                                                                              #
+################################################################################
+
+[user]
+
+    name  = Ian Warner
+    email = ian.warner@drykiss.com
+
+[credential]
+    helper = osxkeychain
+
+[github]
+    user = iwarner
+
+[core]
+    autocrlf = input
+
+# ssh-keygen -t rsa -C "g3dinua@gmail.com"
+
+# copy ssh key to github.com
+# subl ~/.ssh/id_rsa.pub
+
+# test connection
+# ssh -T git@github.com
+
+# set git config values
+# git config --global user.name "Bohdan Viter"
+# git config --global user.email "g3dinua@gmail.com"
+# git config --global github.user g3d
+# git config --global github.token your_token_here
+# git config --global credential.helper osxkeychain
+
+# git config --global core.editor "subl -w"
+# git config --global color.ui true
