@@ -20,5 +20,8 @@ else
     log "GCC installed"
 fi
 
-log "Set X-Code Select switch to Xcode App"
+log "Set XCode Select switch to Xcode App"
 sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer
+
+log "Install command line tools"
+xcode-select --install

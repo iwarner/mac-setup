@@ -4,7 +4,7 @@
 #                                                                    #
 # Gems                                                               #
 # This will install Gems                                             #
-#                                                                    #                                                                    #                                                                    #
+#                                                                    #                                                                                                                                        #
 ######################################################################
 
 header "Install required Gems"
@@ -14,16 +14,13 @@ read GEM_CONTINE
 
 if [[ $GEM_CONTINE == y || $GEM_CONTINE == Y ]] ; then
 
-    subheader "Copy .gemrc"
-
-    cp "$DOTFILES"/.gemrc ~/.gemrc
-
     subheader "Check bundler is installed"
 
     if ! has bundle ; then
+
         log "Install Bundler Gem"
-        gem install --no-ri --no-rdo bundler
-        gem install --no-ri --no-rdo thor
+        gem install --no-ri --no-rdo bundler thor
+
     else
         log "-e \\tGem Bundle already installed" true
     fi

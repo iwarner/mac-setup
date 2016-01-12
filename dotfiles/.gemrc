@@ -2,16 +2,17 @@
 #                                                                    #
 # .gemrc DotFile                                                     #
 #                                                                    #
+# http://docs.rubygems.org/read/chapter/11                           #
+#                                                                    #
 ######################################################################
 
-# :update_sources: true
-# :sources:
-# - https://rubygems.org
-# - http://gems.github.com
-# :benchmark: false
-# :bulk_threshold: 1000
-# :backtrace: false
-# :verbose: true
-# gem: --no-ri --no-rdoc
 
-gem: --no-ri --no-rdoc
+gem            : --no-ri --no-rdoc
+benchmark      : false
+verbose        : true
+update_sources : true
+sources        : 
+- http://gems.rubyforge.org/
+- http://rubygems.org/
+backtrace      : true
+bulk_threshold : 1000

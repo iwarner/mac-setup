@@ -24,7 +24,10 @@ if [[ $SSH_CONTINE == y || $SSH_CONTINE == Y ]] ; then
     fi
 
     # SymLink Folder and Change Permissions
-    ln -s ~/Google\ Drive/Service\ Files/Server\ Local/SSH ~/.ssh
-    chmod -R 0700 ~/Google\ Drive/Service\ Files/Server\ Local/ssh/*
+    ln -s ~/Dropbox/Service\ Files/Server\ Local/SSH ~/.ssh
+    chmod -R 0700 ~/Dropbox/Service\ Files/Server\ Local/ssh/*
+
+    # Symlink ssh to .ssh
+    ln -s ~/.ssh ~/ssh
 
 fi

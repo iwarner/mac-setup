@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-######################################################################
-#                                                                    #
-# Sublime Text Recipe                                                #
-#                                                                    #
-# cd ~/Google\ Drive/Service_Files/Server\ Local/Setup               #
-#                                                                    #
-######################################################################
+################################################################################
+#                                                                              #
+# Sublime Text Recipe                                                          #
+#                                                                              #
+# cd ~/Google\ Drive/Service_Files/Server\ Local/Setup                         #
+#                                                                              #
+################################################################################
 
 # Header
 header "Sublime Text Configuration"
@@ -22,6 +22,29 @@ if [[ $SUBLIME_CONTINE == y || $SUBLIME_CONTINE == Y ]] ; then
     fi
 
     # Symlink folder
-    ln -s ~/Google\ Drive/Service\ Files/Library/Application\ Support/Sublime\ Text\ 3 ~/Library/Application\ Support/Sublime\ Text\ 3
+    ln -s ~/Dropbox/Service\ Files/Library/Application\ Support/Sublime\ Text\ 3 ~/Library/Application\ Support/Sublime\ Text\ 3
+
+    # Install Linters
+
+    # Annotations : https://github.com/SublimeLinter/SublimeLinter-annotations
+    # N/A
+
+    # Coffee Script : https://github.com/SublimeLinter/SublimeLinter-coffee
+    npm install -g coffee-script
+
+    # CSS Linter : https://github.com/SublimeLinter/SublimeLinter-csslint
+    npm install -g csslint
+
+    # HAML : https://github.com/SublimeLinter/SublimeLinter-haml
+    gem install haml
+
+    # JSHINT : https://github.com/SublimeLinter/SublimeLinter-jshint
+    npm install -g jshint
+
+    # PHP : https://github.com/SublimeLinter/SublimeLinter-php
+    # Install PHP
+
+    # HTML Tidy : https://github.com/SublimeLinter/SublimeLinter-html-tidy
+    brew install tidy-html5
 
 fi

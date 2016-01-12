@@ -32,6 +32,7 @@ if [[ $OHMY_CONTINE == y || $OHMY_CONTINE == Y ]] ; then
 
         git clone https://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme.git ~/.oh-my-zsh/themes/powerline
         log "-e \\tCreating Symlink" true
+        
         cd ~/.oh-my-zsh/themes/powerline
         ln -f powerline.zsh-theme ~/.oh-my-zsh/themes/powerline.zsh-theme
 
@@ -47,25 +48,6 @@ if [[ $OHMY_CONTINE == y || $OHMY_CONTINE == Y ]] ; then
         cd ~/.oh-my-zsh/themes/powerline
         git pull
 
-    fi
-
-    subheader "Overwrite ~/.zshrc and ~/.zprofile files"
-
-    cp "$DOTFILES"/.zshrc ~/.zshrc
-    cp "$DOTFILES"/.zprofile ~/.zprofile
-
-    subheader "Delete BASH Files"
-
-    if [ -f ~/.bash_history ] ; then
-        rm ~/.bash_history
-    fi
-
-    if [ -f ~/.bash_profile ] ; then
-        rm ~/.bash_profile
-    fi
-
-    if [ -f ~/.bashrc ] ; then
-        rm ~/.bashrc
     fi
 
 fi

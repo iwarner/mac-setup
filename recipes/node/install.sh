@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
-######################################################################
-#                                                                    #
-# Node                                                               #
-# This will also install NPM                                         #
-#                                                                    #
-# @see http://nodejs.org/                                            #
-#                                                                    #
-######################################################################
+################################################################################
+#                                                                              #
+# Node via NVM                                                                 #
+# This will also install NPM                                                   #
+#                                                                              #
+# @see http://nodejs.org/                                                      #
+#                                                                              #
+################################################################################
 
 # Uninstall
 # http://stackoverflow.com/questions/11177954/how-do-i-completely-uninstall-node-js-and-reinstall-from-beginning-mac-os-x
@@ -20,15 +20,15 @@ read NODE_CONTINE
 
 if [[ $NODE_CONTINE == y || $NODE_CONTINE == Y ]] ; then
 
-    # Install NVM
-    curl https://raw.githubusercontent.com/creationix/nvm/v0.17.2/install.sh | bash
+    # Install NVM - follow the caveats
+    brew install nvm
 
     source ~/.zshrc
 
     # Install Node
-    nvm install 0.11
-    nvm use 0.11
-    nvm alias default 0.11
+    nvm install stable
+    nvm use stable
+    nvm alias default stable
 
     # Install Bower
     npm install -g bower

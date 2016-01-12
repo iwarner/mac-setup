@@ -1,8 +1,8 @@
-######################################################################
-#                                                                    #
-# .zshrc DotFile                                                     #
-#                                                                    #
-######################################################################
+################################################################################
+#                                                                              #
+# .zshrc DotFile                                                               #
+#                                                                              #
+################################################################################
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
@@ -18,13 +18,20 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=( git )
 
-HOMEBREW_GITHUB_API_TOKEN=fa2c62593615881786b2a885fd036d64d0dae86b
-
 source $ZSH/oh-my-zsh.sh
 
-export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:~/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
-if which rbenv > /dev/null; then eval "$(rbenv init - --no-rehash)"; fi
+# RBENV Path
+if which rbenv > /dev/null; then
+    eval "$(rbenv init - --no-rehash)";
+fi
+
+# NVM Path
+#if which nvm > /dev/null; then
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+#fi
 
 # Update system
 echo "Update System (y/Y)"

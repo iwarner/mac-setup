@@ -7,20 +7,20 @@
 #                                                                       #
 #########################################################################
 
+# GIT
+alias ggpull='ggl'
+alias ggpush='ggp'
+
 # Folder Launch
-alias folder.w='~/Google\ Drive/www/'
+alias folder.w='~/Dropbox/www/'
 alias folder.dk='~/www/DryKiss'
 
 # Shortcuts
-alias db="cd ~/Google\ Drive"
+alias db="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias h="history"
 alias j="jobs"
-
-# Middleman Launch
-alias launch.dk='cd ~/Google\ Drive/www/DryKiss/drykiss.com/public && sudo bundle exec middleman server -h local.drykiss.com -p 80'
-alias launch.eve='cd ~/Google\ Drive/www/DryKiss/eveonline.com/public && sudo bundle exec middleman server -p 80'
 
 # Programs
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"

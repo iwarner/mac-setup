@@ -4,7 +4,7 @@
 #                                                                    #
 ######################################################################
 
-# Make vim the default editor
+# Make Nano the default editor
 export EDITOR="nano"
 
 # Larger bash history (allow 32³ entries; default is 500)

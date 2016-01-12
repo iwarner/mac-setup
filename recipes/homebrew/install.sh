@@ -41,13 +41,12 @@ if [[ $BREW_CONTINE == y || $BREW_CONTINE == Y ]] ; then
 
         log "Reload Source"
         source ~/.bash_profile
-        source ~/.zshrc
 
     else
 
         log "Homebrew installed"
-
         log "Run Brew Doctor? (y/Y)"
+
         read BREW_DOCTOR
 
         if [[ $BREW_DOCTOR == y || $BREW_DOCTOR == Y ]] ; then
@@ -70,11 +69,8 @@ if [[ $BREW_CONTINE == y || $BREW_CONTINE == Y ]] ; then
     brew tap homebrew/dupes || { log "Dupes already Tapped"; }
 
     # Install WGet, ImageMagick, OpenSSL, LibYAML, LibIConv
-    subheader "Install WGet, ImageMagick, openssl, libyaml"
-    brew install wget imagemagick openssl libyaml libiconv
+    subheader "Install Curl, WGet, ImageMagick, openssl, libyaml"
+    brew install curl wget imagemagick openssl libyaml libiconv git
     brew link openssl --force
 
 fi
-
-# Check if file exists first
-# source ~/.bash_profile

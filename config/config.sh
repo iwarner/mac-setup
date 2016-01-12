@@ -14,12 +14,11 @@ DOTFILES="$BASH_PATH"/dotfiles
 
 # Array of Script to Run
 # gcc
+# dotfiles
 # homebrew
-# git
 # rbenv
 # zsh
 # oh_my_zsh
-# exports
 # sublime_text
 # ssh
 # mysql
@@ -30,7 +29,7 @@ DOTFILES="$BASH_PATH"/dotfiles
 # hosts
 # osx
 
-SCRIPTS=( gcc homebrew git rbenv zsh oh_my_zsh exports sublime_text ssh itunes gems node )
+SCRIPTS=( dotfiles )
 
 # OSX Settings
 COMPUTER_NAME="DryKISS"

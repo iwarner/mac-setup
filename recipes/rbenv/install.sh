@@ -17,7 +17,7 @@
 ######################################################################
 
 # Variables
-VERSION=2.1.3
+VERSION=2.2.3
 
 # Header
 header "RBENV Installation Script"
@@ -33,13 +33,6 @@ if [[ $RBENV_CONTINE == y || $RBENV_CONTINE == Y ]] ; then
     subheader "Install Rbenv, Rbenv Gem and Ruby Build"
     brew install rbenv rbenv-gem-rehash ruby-build
 
-    # Add appropriate path
-    if [ -n "${ZSH_VERSION:-}" ]; then
-        echo 'eval "$(rbenv init - --no-rehash)"' >> ~/.zshrc
-    else
-        echo 'eval "$(rbenv init - --no-rehash)"' >> ~/.bash_profile
-    fi
-
     eval "$(rbenv init - --no-rehash)"
 
     # Install Ruby Version
@@ -54,6 +47,3 @@ if [[ $RBENV_CONTINE == y || $RBENV_CONTINE == Y ]] ; then
     rm -r ~/.gem
 
 fi
-
-# Check if file exists first
-source ~/.bash_profile
