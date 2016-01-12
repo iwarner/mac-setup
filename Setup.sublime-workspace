@@ -1,0 +1,210 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"rvm",
+				"rvm-installer"
+			],
+			[
+				"SUBLIME",
+				"SUBLIME_VERSION"
+			],
+			[
+				"Libra",
+				"librarian"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Ruby/Ruby.sublime-build",
+	"command_palette":
+	{
+		"height": 267.0,
+		"selected_items":
+		[
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/TODO.md",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/dotfiles/.zshrc",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/recipes/settings/install.sh",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/recipes/settings/osx/install.sh",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/.gitattributes",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/CHANGELOG.md",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/dotfiles/.gitconfig",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/README.md",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/Setup.sublime-project",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/.gitignore",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/lib/options.sh",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/tmp/Sublime-Text-2.0.1.dmg",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/Gemfile",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/bootstrap.sh",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/recipes/applications/homebrew/install.sh",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/recipes/applications/php/install.sh",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/project.sublime-project",
+		"/Users/ianwarner/Dropbox/Service Files/MySQL/triangle_games.sql",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/recipes/applications/mysql/install.sh",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/dotfiles/my.cnf",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/dotfiles/.zprofile",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/recipes/settings/itunes/install.sh",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/recipes/settings/hosts/install.sh",
+		"/Users/ianwarner/Desktop/.localized",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/lib/functions.sh",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/recipes/settings/gems/install.sh",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/Gemfile.lock",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/recipes/applications/rbenv/install.sh",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/recipes/applications/oh_my_zsh/install.sh",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/recipes/applications/zsh/install.sh",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/recipes/applications/rvm/install.sh",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/recipes/applications/rvm/uninstall.sh",
+		"/Users/ianwarner/Dropbox/Service Files/Library/Application Support/Sublime Text 2/Sublime Projects/Setup.sublime-project",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/tmp/rvm.sh",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/lib/dmg.sh",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/recipes/applications/git/install.sh",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/recipes/applications/google_chrome/install.sh",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/recipes/applications/sublime_text/install.sh",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/recipes/settings/gcc/install.sh",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/recipes/settings/ssh/install.sh",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/GEMFILE",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/recipes/settings/librarian/install.sh",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/dotfiles/.gemrc",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/tmp/Sublime Text 2.0.1.dmg",
+		"/Users/ianwarner/Dropbox/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/ianwarner/Dropbox/Library/Application Support/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
+		"/Users/ianwarner/Dropbox/Library/Application Support/Sublime Text 2/Packages/Ruby/sub(;..;)-{-match-..-}-(sub).sublime-snippet",
+		"/Users/ianwarner/Dropbox/Library/Application Support/Sublime Text 2/Sublime Projects/Setup.sublime-project",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/site-cookbooks/sublime_text/recipes/default.rb",
+		"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup/Cheffile"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/ianwarner/Dropbox/Service Files/Server Local/Setup"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"subl",
+			"connect",
+			"cdpath",
+			"branch",
+			"rvm-ins",
+			"time",
+			"agent",
+			"com.apple.notificationcenterui.agent",
+			"unload",
+			"agent",
+			"ln",
+			"clock",
+			"date",
+			"show date",
+			"cd"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 233.0,
+	"status_bar_visible": true
+}
