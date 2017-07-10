@@ -2,7 +2,7 @@
 
 0.0.5
 
-* Refactored to use Sublime 3 - packages created
+* Re-factored to use Sublime 3 - packages created
 
 Previous installed packages
 

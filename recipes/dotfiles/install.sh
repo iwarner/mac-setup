@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-######################################################################
-#                                                                    #
-# Dotfiles                                                           #
-#                                                                    #
-######################################################################
+################################################################################
+#                                                                              #
+# Dotfiles                                                                     #
+#                                                                              #
+################################################################################
 
 header "Installing Dotfiles"
 
@@ -18,7 +18,7 @@ if [[ $DOTFILE_CONTINE == y || $DOTFILE_CONTINE == Y ]] ; then
     cp "$DOTFILES"/.zshrc ~/.zshrc
     cp "$DOTFILES"/.zprofile ~/.zprofile
 
-    subheader "Delete BASH Files"
+    subheader "Delete BASH files"
 
     if [ -f ~/.bash_history ] ; then
         rm ~/.bash_history
@@ -44,5 +44,6 @@ if [[ $DOTFILE_CONTINE == y || $DOTFILE_CONTINE == Y ]] ; then
     subheader "Copy .gitconfig"
 
     cp "$DOTFILES"/.gitconfig ~/.gitconfig
+    cp "$DOTFILES"/.gitignore_global ~/.gitignore_global
 
 fi

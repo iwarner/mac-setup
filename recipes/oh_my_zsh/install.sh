@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 
-#######################################################################
-#                                                                     #
-# Oh My ZSH Recipe                                                    #
-#                                                                     #
-# https://github.com/robbyrussell/oh-my-zsh                           #
-# https://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme        #
-# https://github.com/Lokaltog/powerline-fonts/tree/master/Inconsolata #
-#                                                                     #
-#######################################################################
+################################################################################
+#                                                                              #
+# Oh My ZSH Recipe                                                             #
+#                                                                              #
+# https://github.com/robbyrussell/oh-my-zsh                                    #
+# https://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme                 #
+# https://github.com/Lokaltog/powerline-fonts/tree/master/Inconsolata          #
+#                                                                              #
+################################################################################
 
 header "Installing Oh My ZSH"
 
@@ -32,15 +32,12 @@ if [[ $OHMY_CONTINE == y || $OHMY_CONTINE == Y ]] ; then
 
         git clone https://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme.git ~/.oh-my-zsh/themes/powerline
         log "-e \\tCreating Symlink" true
-        
+
         cd ~/.oh-my-zsh/themes/powerline
         ln -f powerline.zsh-theme ~/.oh-my-zsh/themes/powerline.zsh-theme
 
         cd ~/Library/Fonts
         wget "https://github.com/Lokaltog/powerline-fonts/raw/master/InconsolataDz/Inconsolata-dz%20for%20Powerline.otf"
-
-        # wget "https://github.com/Lokaltog/powerline-fonts/raw/master/SourceCodePro/Sauce%20Code%20Powerline%20Regular.otf"
-        # fontforge -script "Sauce Code Powerline Regular.otf"
 
     else
 

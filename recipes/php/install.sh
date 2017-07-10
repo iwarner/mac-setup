@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-######################################################################
-#                                                                    #
-# PHP Recipe                                                         #
-# https://github.com/josegonzalez/homebrew-php                       #
-#                                                                    #
-######################################################################
+################################################################################
+#                                                                              #
+# PHP Recipe                                                                   #
+# https://github.com/josegonzalez/homebrew-php                                 #
+#                                                                              #
+################################################################################
 
 # To enable PHP in Apache add the following to httpd.conf and restart Apache:
 #     LoadModule php5_module    /usr/local/opt/php54/libexec/apache2/libphp5.so
@@ -34,8 +34,6 @@
 # If you wish to swap the PHP you use on the command line, you should add the following to ~/.bashrc,
 # ~/.zshrc, ~/.profile or your shell's equivalent configuration file:
 
-#       export PATH="$(brew --prefix josegonzalez/php/php54)/bin:$PATH"
-
 header "PHP Installation Script"
 
 log "Continue (y/Y)"
@@ -45,7 +43,15 @@ if [[ $PHP_CONTINE == y || $PHP_CONTINE == Y ]] ; then
 
     # Install the latest PHP via HomeBrew
     brew update
-    brew tap josegonzalez/homebrew-php
-    brew install php54 php54-apc php54-mcrypt
+
+    brew tap homebrew/dupes
+    brew tap homebrew/versions
+    brew tap homebrew/homebrew-php
+
+    # List option
+    # brew options php54
+
+    # PHP 5.4
+    brew install php54 php54-mcrypt
 
 fi

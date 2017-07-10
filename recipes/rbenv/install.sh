@@ -1,23 +1,23 @@
 #!/usr/bin/env bash
 
-######################################################################
-#                                                                    #
-# Rbenv Recipe                                                       #
-#                                                                    #
-# https://github.com/sstephenson/rbenv/                              #
-#                                                                    #
-# To use Homebrew's directories rather than ~/.rbenv add             #
-# export RBENV_ROOT=/usr/local/var/rbenv                             #
-#                                                                    #
-# To enable shims and autocompletion add to your profile:            #
-# if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi        #
-#                                                                    #
-# rbenv install -l                                                   #
-#                                                                    #
-######################################################################
+################################################################################
+#                                                                              #
+# Rbenv Recipe                                                                 #
+#                                                                              #
+# https://github.com/sstephenson/rbenv/                                        #
+#                                                                              #
+# To use Homebrew's directories rather than ~/.rbenv add                       #
+# export RBENV_ROOT=/usr/local/var/rbenv                                       #
+#                                                                              #
+# To enable shims and autocompletion add to your profile:                      #
+# if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi                  #
+#                                                                              #
+# rbenv install -l                                                             #
+#                                                                              #
+################################################################################
 
 # Variables
-VERSION=2.2.3
+VERSION=2.3.1
 
 # Header
 header "RBENV Installation Script"
@@ -31,7 +31,7 @@ if [[ $RBENV_CONTINE == y || $RBENV_CONTINE == Y ]] ; then
     brew update
 
     subheader "Install Rbenv, Rbenv Gem and Ruby Build"
-    brew install rbenv rbenv-gem-rehash ruby-build
+    brew install rbenv ruby-build
 
     eval "$(rbenv init - --no-rehash)"
 

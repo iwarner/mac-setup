@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
-########################################################################
-#                                                                      #
-# Create required setup for this machine                               #
-#                                                                      #
-# cd   ~/Google\ Drive/Service\ Files/Server\ Local/Setup              #
-# bash ~/Google\ Drive/Service\ Files/Server\ Local/Setup/bootstrap.sh #
-#                                                                      #
-########################################################################
+################################################################################
+#                                                                              #
+# Create required setup for this machine                                       #
+#                                                                              #
+# cd   ~/Google\ Drive/Service\ Files/Server\ Local/Setup                      #
+# bash ~/Google\ Drive/Service\ Files/Server\ Local/Setup/bootstrap.sh         #
+#                                                                              #
+################################################################################
 
 # https://gist.github.com/g3d/2709563
 # http://www.tldp.org/LDP/Bash-Beginners-Guide/html/Bash-Beginners-Guide.html
@@ -26,7 +26,7 @@ BASH_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 . "$BASH_PATH"/lib/functions.sh
 
 # Welcome Message
-hello "Setup Script" "This will setup the necessary software for MAC OSX Development"
+hello "Setup Script" "This will set up the necessary software for MAC OSX Development"
 
 # Ask for the administrator password upfront
 sudo -v

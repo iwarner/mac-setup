@@ -23,7 +23,9 @@ if [[ $NODE_CONTINE == y || $NODE_CONTINE == Y ]] ; then
     # Install NVM - follow the caveats
     brew install nvm
 
+    # Source
     source ~/.zshrc
+    source ~/.nvm/nvm.sh
 
     # Install Node
     nvm install stable
@@ -32,5 +34,16 @@ if [[ $NODE_CONTINE == y || $NODE_CONTINE == Y ]] ; then
 
     # Install Bower
     npm install -g bower
+
+    # Set NPM User
+    # https://gist.github.com/coolaj86/1318304
+    npm set init.author.name  "Ian Warner"
+    npm set init.author.email "ian.warner@drykiss.com"
+    npm set init.author.url   "http://drykiss.com"
+
+    npm adduser
+
+    # Install Yarn
+    brew install yarn
 
 fi

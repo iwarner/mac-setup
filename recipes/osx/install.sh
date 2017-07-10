@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-######################################################################
-#                                                                    #
-# OSX Settings                                                       #
-#                                                                    #                                                                    #
-######################################################################
+################################################################################
+#                                                                              #
+# OSX Settings                                                                 #
+#                                                                              #
+################################################################################
 
 header "Do You Want to Run the OSX Defaults Script? (y/Y)"
 read CONTINUE
@@ -18,9 +18,9 @@ if [[ "$CONTINUE" == "y" || "$CONTINUE" == "Y" ]] ; then
     # Keep-alive: update existing `sudo` time stamp until `.osx` has finished
     while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-    ###############################################################################
-    # General UI/UX                                                               #
-    ###############################################################################
+    ############################################################################
+    # General UI/UX                                                            #
+    ############################################################################
 
     # Set computer name (as done via System Preferences → Sharing)
     sudo scutil --set ComputerName "DryKISS"
@@ -128,9 +128,9 @@ if [[ "$CONTINUE" == "y" || "$CONTINUE" == "Y" ]] ; then
     # Disable smart dashes as they’re annoying when typing code
     defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
-    ###############################################################################
-    # SSD-specific tweaks                                                         #
-    ###############################################################################
+    ############################################################################
+    # SSD-specific tweaks                                                      #
+    ############################################################################
 
     # Disable local Time Machine snapshots
     sudo tmutil disablelocal
@@ -148,9 +148,9 @@ if [[ "$CONTINUE" == "y" || "$CONTINUE" == "Y" ]] ; then
     # Disable the sudden motion sensor as it’s not useful for SSDs
     sudo pmset -a sms 0
 
-    ###############################################################################
-    # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
-    ###############################################################################
+    ############################################################################
+    # Trackpad, mouse, keyboard, Bluetooth accessories, and input              #
+    ############################################################################
 
     # Trackpad: enable tap to click for this user and for the login screen
     defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
@@ -202,9 +202,9 @@ if [[ "$CONTINUE" == "y" || "$CONTINUE" == "Y" ]] ; then
     # Stop iTunes from responding to the keyboard media keys
     #launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
 
-    ###############################################################################
-    # Screen                                                                      #
-    ###############################################################################
+    ############################################################################
+    # Screen                                                                   #
+    ############################################################################
 
     # Require password immediately after sleep or screen saver begins
     defaults write com.apple.screensaver askForPassword -int 1
@@ -225,9 +225,9 @@ if [[ "$CONTINUE" == "y" || "$CONTINUE" == "Y" ]] ; then
     # Enable HiDPI display modes (requires restart)
     sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
 
-    ###############################################################################
-    # Finder                                                                      #
-    ###############################################################################
+    ############################################################################
+    # Finder                                                                   #
+    ############################################################################
 
     # Finder: allow quitting via ⌘ + Q; doing so will also hide desktop icons
     defaults write com.apple.finder QuitMenuItem -bool true
@@ -342,9 +342,9 @@ if [[ "$CONTINUE" == "y" || "$CONTINUE" == "Y" ]] ; then
         OpenWith -bool true \
         Privileges -bool true
 
-    ###############################################################################
-    # Dock, Dashboard, and hot corners                                            #
-    ###############################################################################
+    ############################################################################
+    # Dock, Dashboard, and hot corners                                         #
+    ############################################################################
 
     # Enable highlight hover effect for the grid view of a stack (Dock)
     defaults write com.apple.dock mouse-over-hilite-stack -bool true
@@ -435,9 +435,9 @@ if [[ "$CONTINUE" == "y" || "$CONTINUE" == "Y" ]] ; then
     defaults write com.apple.dock wvous-bl-corner -int 5
     defaults write com.apple.dock wvous-bl-modifier -int 0
 
-    ###############################################################################
-    # Safari & WebKit                                                             #
-    ###############################################################################
+    ############################################################################
+    # Safari & WebKit                                                          #
+    ############################################################################
 
     # Set Safari’s home page to `about:blank` for faster loading
     defaults write com.apple.Safari HomePage -string "about:blank"
@@ -474,9 +474,9 @@ if [[ "$CONTINUE" == "y" || "$CONTINUE" == "Y" ]] ; then
     # Add a context menu item for showing the Web Inspector in web views
     defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
-    ###############################################################################
-    # Mail                                                                        #
-    ###############################################################################
+    ############################################################################
+    # Mail                                                                     #
+    ############################################################################
 
     # Disable send and reply animations in Mail.app
     defaults write com.apple.mail DisableReplyAnimations -bool true
@@ -499,9 +499,9 @@ if [[ "$CONTINUE" == "y" || "$CONTINUE" == "Y" ]] ; then
     # Disable automatic spell checking
     defaults write com.apple.mail SpellCheckingBehavior -string "NoSpellCheckingEnabled"
 
-    ###############################################################################
-    # Spotlight                                                                   #
-    ###############################################################################
+    ############################################################################
+    # Spotlight                                                                #
+    ############################################################################
 
     # Hide Spotlight tray-icon (and subsequent helper)
     #sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
@@ -534,9 +534,9 @@ if [[ "$CONTINUE" == "y" || "$CONTINUE" == "Y" ]] ; then
     # Rebuild the index from scratch
     sudo mdutil -E / > /dev/null
 
-    ###############################################################################
-    # Terminal & iTerm 2                                                          #
-    ###############################################################################
+    ############################################################################
+    # Terminal & iTerm 2                                                       #
+    ############################################################################
 
     # Only use UTF-8 in Terminal.app
     defaults write com.apple.terminal StringEncodings -array 4
@@ -544,9 +544,9 @@ if [[ "$CONTINUE" == "y" || "$CONTINUE" == "Y" ]] ; then
     # Don’t display the annoying prompt when quitting iTerm
     defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
-    ###############################################################################
-    # Time Machine                                                                #
-    ###############################################################################
+    ############################################################################
+    # Time Machine                                                             #
+    ############################################################################
 
     # Prevent Time Machine from prompting to use new hard drives as backup volume
     defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
@@ -554,9 +554,9 @@ if [[ "$CONTINUE" == "y" || "$CONTINUE" == "Y" ]] ; then
     # Disable local Time Machine backups
     hash tmutil &> /dev/null && sudo tmutil disablelocal
 
-    ###############################################################################
-    # Activity Monitor                                                            #
-    ###############################################################################
+    ############################################################################
+    # Activity Monitor                                                         #
+    ############################################################################
 
     # Show the main window when launching Activity Monitor
     defaults write com.apple.ActivityMonitor OpenMainWindow -bool true
@@ -571,9 +571,9 @@ if [[ "$CONTINUE" == "y" || "$CONTINUE" == "Y" ]] ; then
     defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"
     defaults write com.apple.ActivityMonitor SortDirection -int 0
 
-    ###############################################################################
-    # Address Book, Dashboard, iCal, TextEdit, and Disk Utility                   #
-    ###############################################################################
+    ############################################################################
+    # Address Book, Dashboard, iCal, TextEdit, and Disk Utility                #
+    ############################################################################
 
     # Enable the debug menu in Address Book
     defaults write com.apple.addressbook ABShowDebugMenu -bool true
@@ -594,9 +594,9 @@ if [[ "$CONTINUE" == "y" || "$CONTINUE" == "Y" ]] ; then
     defaults write com.apple.DiskUtility DUDebugMenuEnabled -bool true
     defaults write com.apple.DiskUtility advanced-image-options -bool true
 
-    ###############################################################################
-    # Mac App Store                                                               #
-    ###############################################################################
+    ############################################################################
+    # Mac App Store                                                            #
+    ############################################################################
 
     # Enable the WebKit Developer Tools in the Mac App Store
     defaults write com.apple.appstore WebKitDeveloperExtras -bool true
@@ -604,9 +604,9 @@ if [[ "$CONTINUE" == "y" || "$CONTINUE" == "Y" ]] ; then
     # Enable Debug Menu in the Mac App Store
     defaults write com.apple.appstore ShowDebugMenu -bool true
 
-    ###############################################################################
-    # Messages                                                                    #
-    ###############################################################################
+    ############################################################################
+    # Messages                                                                 #
+    ############################################################################
 
     # Disable automatic emoji substitution (i.e. use plain text smileys)
     defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "automaticEmojiSubstitutionEnablediMessage" -bool false
@@ -617,24 +617,24 @@ if [[ "$CONTINUE" == "y" || "$CONTINUE" == "Y" ]] ; then
     # Disable continuous spell checking
     defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "continuousSpellCheckingEnabled" -bool false
 
-    ###############################################################################
-    # Google Chrome & Google Chrome Canary                                        #
-    ###############################################################################
+    ############################################################################
+    # Google Chrome & Google Chrome Canary                                     #
+    ############################################################################
 
     # Allow installing user scripts via GitHub Gist or Userscripts.org
     defaults write com.google.Chrome ExtensionInstallSources -array "https://gist.githubusercontent.com/" "http://userscripts.org/*"
     defaults write com.google.Chrome.canary ExtensionInstallSources -array "https://gist.githubusercontent.com/" "http://userscripts.org/*"
 
-    ###############################################################################
-    # GPGMail 2                                                                   #
-    ###############################################################################
+    ############################################################################
+    # GPGMail 2                                                                #
+    ############################################################################
 
     # Disable signing emails by default
     defaults write ~/Library/Preferences/org.gpgtools.gpgmail SignNewEmailsByDefault -bool false
 
-    ###############################################################################
-    # SizeUp.app                                                                  #
-    ###############################################################################
+    ############################################################################
+    # SizeUp.app                                                               #
+    ############################################################################
 
     # Start SizeUp at login
     defaults write com.irradiatedsoftware.SizeUp StartAtLogin -bool true
@@ -642,9 +642,9 @@ if [[ "$CONTINUE" == "y" || "$CONTINUE" == "Y" ]] ; then
     # Don’t show the preferences window on next start
     defaults write com.irradiatedsoftware.SizeUp ShowPrefsOnNextStart -bool false
 
-    ###############################################################################
-    # Transmission.app                                                            #
-    ###############################################################################
+    ############################################################################
+    # Transmission.app                                                         #
+    ############################################################################
 
     # Use `~/Documents/Torrents` to store incomplete downloads
     defaults write org.m0k.transmission UseIncompleteDownloadFolder -bool true
@@ -661,9 +661,9 @@ if [[ "$CONTINUE" == "y" || "$CONTINUE" == "Y" ]] ; then
     # Hide the legal disclaimer
     defaults write org.m0k.transmission WarningLegal -bool false
 
-    ###############################################################################
-    # Twitter.app                                                                 #
-    ###############################################################################
+    ############################################################################
+    # Twitter.app                                                              #
+    ############################################################################
 
     # Disable smart quotes as it’s annoying for code tweets
     defaults write com.twitter.twitter-mac AutomaticQuoteSubstitutionEnabled -bool false
@@ -686,9 +686,9 @@ if [[ "$CONTINUE" == "y" || "$CONTINUE" == "Y" ]] ; then
     # Hide the app in the background if it’s not the front-most window
     defaults write com.twitter.twitter-mac HideInBackground -bool true
 
-    ###############################################################################
-    # Kill affected applications                                                  #
-    ###############################################################################
+    ############################################################################
+    # Kill affected applications                                               #
+    ############################################################################
 
     for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
         "Dock" "Finder" "Mail" "Messages" "Safari" "SizeUp" "SystemUIServer" \

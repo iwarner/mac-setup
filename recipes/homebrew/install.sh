@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
 
-######################################################################
-#                                                                    #
-# HomeBrew Recipe & Brew Dupes installation                          #
-# During installation you may get a prompt to install the xCode      #
-# command line tools                                                 #
-#                                                                    #
-# http://brew.sh/                                                    #
-# https://github.com/mxcl/homebrew/wiki                              #
-# http://mxcl.github.com/homebrew/                                   #
-#                                                                    #
-######################################################################
+################################################################################
+#                                                                              #
+# HomeBrew recipe & Brew dupes installation                                    #
+# During installation you may get a prompt to install the xCode                #
+# command line tools                                                           #
+#                                                                              #
+# http://brew.sh/                                                              #
+# https://github.com/mxcl/homebrew/wiki                                        #
+# http://mxcl.github.com/homebrew/                                             #
+#                                                                              #
+################################################################################
 
 # Enable scheduled checks of brew via launchd:
 # cd ~/Library/LaunchAgents
@@ -19,7 +19,7 @@
 # launchctl load ~/Library/LaunchAgents/net.mkalmes/brewupdate.plist
 # See more at: http://www.skrinakcreative.com/2013/07/29/configuring-mac-os-x-1084-web-development#sthash.sthE2SL1.dpuf
 
-header "HomeBrew Installation Script"
+header "HomeBrew installation script"
 
 log "Continue (y/Y)"
 read BREW_CONTINE
@@ -38,9 +38,6 @@ if [[ $BREW_CONTINE == y || $BREW_CONTINE == Y ]] ; then
 
         log "Change ownership of /usr/local folder"
         sudo chown -R `whoami` /usr/local
-
-        log "Reload Source"
-        source ~/.bash_profile
 
     else
 
@@ -64,13 +61,13 @@ if [[ $BREW_CONTINE == y || $BREW_CONTINE == Y ]] ; then
         brew update && brew upgrade
     fi
 
-    # Install the Dupes
-    subheader "Brew Install Dupes"
+    # Install Dupes
+    subheader "Brew install Dupes"
     brew tap homebrew/dupes || { log "Dupes already Tapped"; }
 
     # Install WGet, ImageMagick, OpenSSL, LibYAML, LibIConv
     subheader "Install Curl, WGet, ImageMagick, openssl, libyaml"
     brew install curl wget imagemagick openssl libyaml libiconv git
-    brew link openssl --force
+    brew unlink openssl && brew link openssl --force
 
 fi

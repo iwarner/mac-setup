@@ -24,7 +24,12 @@ if [[ $SUBLIME_CONTINE == y || $SUBLIME_CONTINE == Y ]] ; then
     # Symlink folder
     ln -s ~/Dropbox/Service\ Files/Library/Application\ Support/Sublime\ Text\ 3 ~/Library/Application\ Support/Sublime\ Text\ 3
 
-    # Install Linters
+    # Symlink snippets into codeblender.net
+    # /Users/ianwarner/Dropbox/Service Files/Sublime Snippets
+    mkdir ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/CodeBlender/
+    ln -s ~/Dropbox/Service\ Files/Sublime\ Snippets ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/CodeBlender
+
+    # Install linter's
 
     # Annotations : https://github.com/SublimeLinter/SublimeLinter-annotations
     # N/A
@@ -43,6 +48,10 @@ if [[ $SUBLIME_CONTINE == y || $SUBLIME_CONTINE == Y ]] ; then
 
     # PHP : https://github.com/SublimeLinter/SublimeLinter-php
     # Install PHP
+
+    # PUG
+    # @see https://github.com/benedfit/SublimeLinter-contrib-pug-lint
+    npm install -g pug-lint
 
     # HTML Tidy : https://github.com/SublimeLinter/SublimeLinter-html-tidy
     brew install tidy-html5

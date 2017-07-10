@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-######################################################################
-#                                                                    #
-# GCC Settings                                                       #
-#                                                                    #
-######################################################################
+################################################################################
+#                                                                              #
+# GCC settings                                                                 #
+#                                                                              #
+################################################################################
 
-header "Apple GCC Installation Script"
+header "Apple GCC installation script"
 
 if ! has gcc ; then
 
@@ -20,7 +20,7 @@ else
     log "GCC installed"
 fi
 
-log "Set XCode Select switch to Xcode App"
+log "Set XCode select switch to Xcode App"
 sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer
 
 log "Install command line tools"

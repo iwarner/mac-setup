@@ -1,11 +1,11 @@
-#########################################################################
-#                                                                       #
-# .zprofile DotFile                                                     #
-#  Place custom Aliases within this files                               #
-#                                                                       #
-# http://www.cyberciti.biz/tips/bash-aliases-mac-centos-linux-unix.html #
-#                                                                       #
-#########################################################################
+################################################################################
+#                                                                              #
+# .zprofile DotFile                                                            #
+#  Place custom aliases within this file                                       #
+#                                                                              #
+# http://www.cyberciti.biz/tips/bash-aliases-mac-centos-linux-unix.html        #
+#                                                                              #
+################################################################################
 
 # GIT
 alias ggpull='ggl'
@@ -13,7 +13,7 @@ alias ggpush='ggp'
 
 # Folder Launch
 alias folder.w='~/Dropbox/www/'
-alias folder.dk='~/www/DryKiss'
+alias folder.dk='/var/www/DryKISS'
 
 # Shortcuts
 alias db="cd ~/Dropbox"
@@ -26,6 +26,7 @@ alias j="jobs"
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
+alias phpini="subl /usr/local/etc/php/5.5/php.ini"
 
 # Laravel
 alias artisan="php artisan"
@@ -33,7 +34,7 @@ alias artisan="php artisan"
 # List only directories
 alias lsd='ls -lF ${colorflag} | grep "^d"'
 
-# Enable aliases to be sudo’ed
+# Enable aliases to be sudo'ed
 alias sudo='sudo '
 
 # Gzip-enabled `curl`
@@ -88,17 +89,12 @@ alias mysql.stop='mysql.server stop'
 alias mysql.start='mysql.server start'
 alias mysql.restart='mysql.server restart'
 
-# Thor
-alias thor.b='thor project:build'
-alias thor.e='thor project:emulate'
-alias thor.l='thor project:links'
-alias thor.pg='thor project:pgBuildZip'
-alias thor.pr='thor project:pgBuildRemote'
-
 # Ripple
 alias ripple='ripple emulate --remote http://localhost'
 
+# Add exports and functions files
 for file in ~/.{exports,functions}; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
+
 unset file

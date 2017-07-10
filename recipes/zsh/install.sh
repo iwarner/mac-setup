@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-######################################################################
-#                                                                    #
-# ZSH Recipe                                                         #
-#                                                                    #
-######################################################################
+################################################################################
+#                                                                              #
+# ZSH Recipe                                                                   #
+#                                                                              #
+################################################################################
 
-header "Install ZSH Shell"
+header "Install ZSH shell"
 
 log "Continue (y/Y)"
 read ZSH_CONTINE
@@ -21,5 +21,3 @@ if [[ $ZSH_CONTINE == y || $ZSH_CONTINE == Y ]] ; then
     chsh -s /usr/local/bin/zsh $USER
 
 fi
-
-source ~/.bash_profile

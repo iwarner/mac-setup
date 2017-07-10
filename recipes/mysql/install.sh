@@ -1,51 +1,20 @@
 #!/usr/bin/env bash
 
-######################################################################
-#                                                                    #
-# MySQL Recipe                                                       #
-#                                                                    #
-# Caveats                                                            #
-#                                                                    #
-# A "/etc/my.cnf" from another install may interfere with a          #
-# Homebrew-built                                                     #
-#                                                                    #
-# To connect:                                                        #
-# $ mysql -uroot                                                     #
-#                                                                    #
-#                                                                    #
-# # To have launchd start mysql at login:
-# $ ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
-#
-# Then to load mysql now: launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
-# Or, if you don't want/need launchctl, you can just run: mysql.server start
-#
-# $ mkdir -p ~/Library/LaunchAgents
-# $ cp /usr/local/Cellar/mysql/5.6.10/homebrew.mxcl.mysql.plist ~/Library/LaunchAgents/
-# $ launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
-# $ unset TMPDIR
-#
-# $ mysql_install_db --verbose --user=`whoami` --basedir="$(brew --prefix mysql)" --datadir=/usr/local/var/mysql --tmpdir=/tmp
-# $ /usr/local/Cellar/mysql/5.6.10/bin/mysqladmin -u root password 'YOUR_NEW_PASSWORD'
-#
-# $ mysql.server start
-# $ mysql -uroot
-#
-#A "/etc/my.cnf" from another install may interfere with a Homebrew-built
-#server starting up correctly.
-#
-#To connect:
-#    mysql -uroot
-#
-#To have launchd start mysql at login:
-#    ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
-#Then to load mysql now:
-#    launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
-#Or, if you don't want/need launchctl, you can just run:
-#    mysql.server start
-#==> Summary
-#🍺  /usr/local/Cellar/mysql/5.6.13: 9382 files, 354M
-#
-######################################################################
+################################################################################
+#                                                                              #
+# MySQL Recipe                                                                 #
+#                                                                              #
+# Caveats                                                                      #
+#                                                                              #
+# A "/etc/my.cnf" from another install may interfere with a                    #
+# Homebrew-built                                                               #
+#                                                                              #
+# To connect:                                                                  #
+# $ mysql.server start                                                         #
+# $ mysql -uroot                                                               #
+# $ quit                                                                       #
+#                                                                              #
+################################################################################
 
 header "MySQL Installation Script"
 

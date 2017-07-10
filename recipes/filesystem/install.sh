@@ -1,19 +1,19 @@
 #!/usr/bin/env bash
 
-######################################################################
-#                                                                    #
-# File System Setup                                                  #
-#                                                                    #
-######################################################################
+################################################################################
+#                                                                              #
+# File system set up                                                           #
+#                                                                              #
+################################################################################
 
-header "File System Setup"
+header "File system set up"
 
 log "Continue (y/Y)"
 read FILE_CONTINE
 
 if [[ $FILE_CONTINE == y || $FILE_CONTINE == Y ]] ; then
 
-    # Symlink in the Library folder
+    # Symlink in the library folder
     sudo ln -s ~/Dropbox/www /var/
 
 fi
