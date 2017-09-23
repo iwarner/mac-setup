@@ -7,7 +7,6 @@
 # http://brew.sh
 # https://github.com/mxcl/homebrew/wiki
 # http://mxcl.github.com/homebrew
-
 # Enable scheduled checks of brew via launchd:
 # cd ~/Library/LaunchAgents
 # git clone https://github.com/mkalmes/brewupdate.git

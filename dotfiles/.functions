@@ -329,10 +329,8 @@ function s()
   fi
 }
 
-##
 # `o` with no arguments opens current directory, otherwise opens the given
 # location
-##
 function o()
 {
   if [ $# -eq 0 ]; then
@@ -342,9 +340,7 @@ function o()
   fi
 }
 
-##
 # `np` with an optional argument `patch`/`minor`/`major`/`<version>` defaults to `patch`
-##
 function np()
 {
   git pull --rebase && \
@@ -356,7 +352,6 @@ function np()
   git push origin master --tags
 }
 
-##
 # `tre` is a shorthand for `tree` with hidden files and colour enabled, ignoring
 # the `.git` directory, listing directories first. The output gets piped into
 # `less` with options to preserve colour and line numbers, unless the output is

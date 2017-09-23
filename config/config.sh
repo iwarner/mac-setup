@@ -15,7 +15,7 @@ DOTFILES="$BASH_PATH"/dotfiles
 # ruby          # Installs an Ruby version control package
 # zsh           # ZSH is a better terminal
 # oh_my_zsh     # Add some sugar for terminal operations - install code fonts
-# node			# NVM Node version manager is required for NPM package manager
+# node			    # NVM Node version manager is required for NPM package manager
 # sublime_text  # Symlink sublime from Dropbox
 # ssh           # Copy SSH from dropbox to .ssh
 # mysql         # Instal MySQL
