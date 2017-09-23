@@ -62,6 +62,8 @@ if [[ $BREW_CONTINE == y || $BREW_CONTINE == Y ]] ; then
   brew tap caskroom/cask || { log "Dupes already Tapped"; }
 
   # Install Formula
+  # @todo check out git https://coderwall.com/p/7aymfa/please-oh-please-use-git-pull-rebase
+  # @todo Set up git as a standalone recipe - has its own dotfile also
   subheader "Install Formula : curl, wget, openssl, git"
   brew install curl wget openssl git
 
