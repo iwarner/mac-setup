@@ -1,0 +1,31 @@
+# .gitconfig DotFile
+# https://help.github.com/articles/dealing-with-line-endings
+# https://github.com/wilmoore/dotfiles/blob/master/active/.config/git/config
+# $ git config -l
+
+[user]
+  name  = Ian Warner
+  email = ian.warner@drykiss.com
+
+[credential]
+  helper = osxkeychain
+
+[github]
+  user  = iwarner
+  token =
+
+[core]
+  autocrlf = input
+  editor = "subl -w"
+  excludesfile = "~/.gitignore_global"
+
+[difftool "sourcetree"]
+  cmd  = opendiff \"$LOCAL\" \"$REMOTE\"
+  path =
+
+[mergetool "sourcetree"]
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
+
+[http]
+  postBuffer = 524288000
