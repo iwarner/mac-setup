@@ -7,6 +7,7 @@
 CURRENT_DIR=`pwd`
 RECIPES="$BASH_PATH"/recipes
 DOTFILES="$BASH_PATH"/dotfiles
+COMPUTER_NAME="DryKISS"
 
 # Array of Script to Run
 # gcc           # Checks that XCode is installed
@@ -15,7 +16,7 @@ DOTFILES="$BASH_PATH"/dotfiles
 # ruby          # Installs an Ruby version control package
 # zsh           # ZSH is a better terminal
 # oh_my_zsh     # Add some sugar for terminal operations - install code fonts
-# node			    # NVM Node version manager is required for NPM package manager
+# node			# NVM Node version manager is required for NPM package manager
 # sublime_text  # Symlink sublime from Dropbox
 # ssh           # Copy SSH from dropbox to .ssh
 # mysql         # Instal MySQL
@@ -28,13 +29,11 @@ DOTFILES="$BASH_PATH"/dotfiles
 #
 # Casks
 # 1password     # Installed from App Store
+# firefox
 # google-chrome
 # sublime
 # skype
-# firefox
+# tunnelblick
 # utorrent
 
-SCRIPTS=(gcc homebrew zsh oh_my_zsh dotfiles ruby node google-chrome filesystem ssh sublime utorrent)
-
-# OSX Settings
-COMPUTER_NAME="DryKISS"
+SCRIPTS=(gcc homebrew zsh oh_my_zsh dotfiles ruby node filesystem ssh google-chrome sublime tunnelblick utorrent)
