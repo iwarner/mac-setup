@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
 # GCC settings
+#
+# @author Ian Warner <ian.warner@drykiss.com>
+# @category recipe
 
 header "Apple GCC installation script"
 

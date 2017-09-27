@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
 # uTorrent
+#
+# @author Ian Warner <ian.warner@drykiss.com>
+# @category recipe
 
 header "Install uTorrent"
 

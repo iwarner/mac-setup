@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
 # ZSH Recipe
+#
+# @author Ian Warner <ian.warner@drykiss.com>
+# @category recipe
 
 header "Install ZSH shell"
 

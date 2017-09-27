@@ -2,6 +2,9 @@
 
 # Hosts File
 # ~"/Google\ Drive/Service Files/Server Local/Setup/dotfiles/hosts"
+#
+# @author Ian Warner <ian.warner@drykiss.com>
+# @category recipe
 
 header "HOST File Link"
 

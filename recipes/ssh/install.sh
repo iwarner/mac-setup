@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
 # SSH Settings
+#
+# @author Ian Warner <ian.warner@drykiss.com>
+# @category recipe
 
 header 'SSH configuration'
 

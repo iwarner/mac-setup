@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
 # File system set up
+#
+# @author Ian Warner <ian.warner@drykiss.com>
+# @category recipe
 
 header "File system set up"
 

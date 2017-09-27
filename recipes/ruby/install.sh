@@ -12,6 +12,9 @@
 #
 # rbenv install -l
 #
+# @author Ian Warner <ian.warner@drykiss.com>
+# @category recipe
+#
 # @todo Rename this recipe to Ruby and include all require GEMS in here
 
 # Variables
@@ -61,5 +64,4 @@ if [[ $RBENV_CONTINE == y || $RBENV_CONTINE == Y ]] ; then
   gem install --no-ri --no-rdoc thor
 
   rbenv rehash
-
 fi

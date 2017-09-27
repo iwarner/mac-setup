@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
 # OSX Settings
+#
+# @author Ian Warner <ian.warner@drykiss.com>
+# @category recipe
 
 header "Do You Want to Run the OSX Defaults Script? (y/Y)"
 read CONTINUE

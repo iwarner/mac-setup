@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
-# iTunes Symlink
+# iTunes
+#
+# @author Ian Warner <ian.warner@drykiss.com>
+# @category recipe
 
 header "ITunes symlink"
 

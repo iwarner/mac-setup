@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
 # Apache
+#
+# @author Ian Warner <ian.warner@drykiss.com>
+# @category recipe
 
 header "Installing Apache"
 

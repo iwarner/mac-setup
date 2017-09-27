@@ -2,7 +2,8 @@
 
 # Sublime Text Recipe
 #
-# cd ~/DryKISS/Service_Files/Setup
+# @author Ian Warner <ian.warner@drykiss.com>
+# @category recipe
 
 # Header
 header "Sublime Text Configuration"

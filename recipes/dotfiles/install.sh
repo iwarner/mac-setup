@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
 # Dotfiles
+#
+# @author Ian Warner <ian.warner@drykiss.com>
+# @category recipe
 
 header 'Installing Dotfiles'
 

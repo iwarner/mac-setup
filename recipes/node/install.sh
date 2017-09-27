@@ -2,11 +2,15 @@
 
 # Node via NVM
 # This will also install NPM
-# @see http://nodejs.org/
-
+#
 # Uninstall
 # http://stackoverflow.com/questions/11177954/how-do-i-completely-uninstall-node-js-and-reinstall-from-beginning-mac-os-x
 # http://dreamerslab.com/blog/en/how-to-setup-a-node-js-development-environment-on-mac-osx-lion/
+#
+# @author Ian Warner <ian.warner@drykiss.com>
+# @category recipe
+#
+# @see http://nodejs.org/
 
 header "Install Node & NPM"
 

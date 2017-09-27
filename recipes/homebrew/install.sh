@@ -13,6 +13,9 @@
 # mv brewupdate/net.mkalmes.brewupdate.plist ~/Library/LaunchAgents
 # launchctl load ~/Library/LaunchAgents/net.mkalmes/brewupdate.plist
 # See more at: http://www.skrinakcreative.com/2013/07/29/configuring-mac-os-x-1084-web-development#sthash.sthE2SL1.dpuf
+#
+# @author Ian Warner <ian.warner@drykiss.com>
+# @category recipe
 
 header "HomeBrew installation script"
 
@@ -66,4 +69,8 @@ if [[ $BREW_CONTINE == y || $BREW_CONTINE == Y ]] ; then
   subheader "Install Formula : curl, wget, openssl, git"
   brew install curl wget openssl git
 
+  # @see https://github.com/minimagick/minimagick
+  brew uninstall imagemagick graphicsmagick libpng jpeg
+  brew cleanup -s
+  brew install graphicsmagick
 fi

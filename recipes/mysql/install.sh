@@ -11,6 +11,9 @@
 # $ mysql.server start
 # $ mysql -uroot
 # $ quit
+#
+# @author Ian Warner <ian.warner@drykiss.com>
+# @category recipe
 
 header "MySQL Installation Script"
 

@@ -4,13 +4,14 @@
 #
 # cd   ~/Google\ Drive/Service\ Files/Server\ Local/Setup
 # bash ~/Google\ Drive/Service\ Files/Server\ Local/Setup/bootstrap.sh
-
 # https://gist.github.com/g3d/2709563
 # http://www.tldp.org/LDP/Bash-Beginners-Guide/html/Bash-Beginners-Guide.html
-
 # Options
 # set -u
 # set -e
+#
+# @author Ian Warner <ian.warner@drykiss.com>
+# @category recipe
 
 # Path
 BASH_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"

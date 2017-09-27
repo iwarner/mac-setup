@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
 # Google Chrome
+#
+# @author Ian Warner <ian.warner@drykiss.com>
+# @category recipe
 
 header "Install Google Chrome"
 
