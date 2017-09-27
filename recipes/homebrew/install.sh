@@ -72,5 +72,6 @@ if [[ $BREW_CONTINE == y || $BREW_CONTINE == Y ]] ; then
   # @see https://github.com/minimagick/minimagick
   brew uninstall imagemagick graphicsmagick libpng jpeg
   brew cleanup -s
-  brew install graphicsmagick
+  brew install graphicsmagick imagemagick
+
 fi
