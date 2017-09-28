@@ -35,9 +35,10 @@ COMPUTER_NAME="DryKISS"
 # firefox       # Browser
 # google-chrome # Browser
 # sublime       # Text editor
+# sketch        # Graphics program
 # skype         # Communication
 # tunnelblick   # VPN Client
 # utorrent      # Torrent downloading
 # virtual-box   # Required for IE Vms
 
-SCRIPTS=(gcc homebrew zsh oh-my-zsh dotfiles ruby node filesystem ssh google-chrome sublime tunnelblick utorrent virtual-box skype)
+SCRIPTS=(gcc homebrew zsh oh-my-zsh dotfiles ruby node filesystem ssh google-chrome sublime tunnelblick utorrent virtual-box skype sketch)
