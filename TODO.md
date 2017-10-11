@@ -22,25 +22,6 @@
   * > tmp > packagename
 * Try and find out where the terminal exits and what the error is - terminal.log with set -e
 
-## Apache
-
-* Create the install file
-* Symlink in the common conf files
-* https://github.com/humanmade/hm-dev/wiki/Setup-a-local-dev-environment-on-Mac-OSX-Lion
-  * Change user and group for Apache to ones own. whoami
-  * PHP FPM setup
-
-## NGinx
-
-* Finish the install script
-* Make it work with PHP FPM
-
-## Homebrew
-
-* Need to check that the URL returned 200
-  * Pause Script otherwise
-* Check to see if .bashrc and .zshrc exist
-
 ## File Extensions
 
 * Change file extensions associated to programs
@@ -84,8 +65,8 @@
 * PearRC caveat for PHP5
 
   if -f ~/.pearrc
-      then
-          sudo mv -f ~/.pearrc ~/.pearrc.bk
+    then
+      sudo mv -f ~/.pearrc ~/.pearrc.bk
   fi
 
 ## Image Optimisation
@@ -98,8 +79,6 @@
 ## Gems
 
 * Should think about moving this ahead of other gem updates like in rbenv
-
-## Rbenv
 
 # Need to reset console before attempting updates
 

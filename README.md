@@ -1,4 +1,4 @@
-# INTRODUCTION
+# Introduction
 
 These set of scripts are used at DryKiss to create a stable and consistent
 development machine.
