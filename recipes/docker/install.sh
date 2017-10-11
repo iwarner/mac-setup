@@ -6,6 +6,7 @@
 #
 # @author Ian Warner <ian.warner@drykiss.com>
 # @category recipe
+# @see http://www.dwmkerr.com/learn-docker-by-building-a-microservice/
 #
 # @todo Download some common images and store them
 # @todo Make sure the cask is updated before download - brew update or other
