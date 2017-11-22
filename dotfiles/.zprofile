@@ -11,7 +11,7 @@ alias folder.w='~/Dropbox/www/'
 alias folder.dk='/var/www/DryKISS'
 
 # Shortcuts
-alias db="cd ~/Dropbox"
+alias dk="cd ~/DryKISS"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias h="history"
@@ -21,7 +21,6 @@ alias j="jobs"
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
-alias phpini="subl /usr/local/etc/php/5.5/php.ini"
 
 # Laravel
 alias artisan="php artisan"

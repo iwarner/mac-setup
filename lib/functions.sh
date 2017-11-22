@@ -18,15 +18,13 @@
 # @category recipe
 
 # Abort
-function abort ()
-{
+function abort () {
   log "-e Program Exited \\n\\n"
   exit 1
 }
 
 # Echo the Welcome Message
-function hello ()
-{
+function hello () {
   header "$1"
   log "$2"
   log "-e \\nDirectories:"
@@ -36,21 +34,18 @@ function hello ()
 }
 
 # Echo the Header
-function header ()
-{
+function header () {
   log "-e \\n\033[1;34;47m $1 \033[0m"
   log "--------------------------------------------------------"
 }
 
 # Echo the Sub-header
-function subheader ()
-{
+function subheader () {
   log "-e \\n\033[1;33;47m $1 \033[0m"
 }
 
 # Log Right
-function log ()
-{
+function log () {
   STATUSCOLOR=""
   COL=""
 
@@ -76,8 +71,7 @@ fi
 }
 
 # Check whether a command is available in the terminal
-function has ()
-{
+function has () {
   type "$1" >/dev/null 2>&1
 }
 

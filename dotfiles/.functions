@@ -1,8 +1,7 @@
 # .functions DotFile
 
 # Update system
-function update()
-{
+function update() {
   clear
 
   # Apple software
@@ -29,8 +28,7 @@ function update()
 }
 
 # Index external drive
-function indexExternal()
-{
+function indexExternal() {
   sudo su
   mdutil -i on /Volumes/video
   mdutil -p on /Volumes/video
@@ -39,15 +37,13 @@ function indexExternal()
 # Start a PHP server from a directory, optionally specifying the port
 # @usage php -S localhost:8181
 # @todo Allow for a port to be supplied through an arg
-function phpserver()
-{
+function phpserver() {
   clear
   php -S "localhost:8181";
 }
 
 # Simple calculator
-function calc()
-{
+function calc() {
   clear
   local result=""
 
@@ -68,20 +64,17 @@ function calc()
 }
 
 # Create a new directory and enter it
-function mkd()
-{
+function mkd() {
   mkdir -p "$@" && cd "$@"
 }
 
 # Change working directory to the top-most Finder window location short for `cdfinder`
-function cdf()
-{
+function cdf() {
   cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')"
 }
 
 # Create a .tar.gz archive, using `zopfli`, `pigz` or `gzip` for compression
-function targz()
-{
+function targz() {
   local tmpFile="${@%/}.tar"
   tar -cvf "${tmpFile}" --exclude=".DS_Store" "${@}" || return 1
 
@@ -110,8 +103,7 @@ function targz()
 
 # Determine size of a file or total size of a directory
 # @usage fs ~/Dropbox
-function fs()
-{
+function fs() {
   if du -b /dev/null > /dev/null 2>&1; then
     local arg=-sbh
   else
@@ -135,8 +127,7 @@ if [ $? -eq 0 ]; then
 fi
 
 # Create a data URL from a file
-function dataurl()
-{
+function dataurl() {
   local mimeType=$(file -b --mime-type "$1")
   if [[ $mimeType == text/* ]]; then
     mimeType="${mimeType};charset=utf-8"
@@ -145,8 +136,7 @@ function dataurl()
 }
 
 # Create a git.io short URL
-function gitio()
-{
+function gitio() {
   if [ -z "${1}" -o -z "${2}" ]; then
     echo "Usage: \`gitio slug url\`"
     return 1
@@ -155,8 +145,7 @@ function gitio()
 }
 
 # Start a Python HTTP server from a directory, optionally specifying the port
-function server()
-{
+function server() {
   local port="${1:-8000}"
   sleep 1 && open "http://localhost:${port}/" &
 
@@ -166,8 +155,7 @@ function server()
 }
 
 # Compare original and gzipped file size
-function gz()
-{
+function gz() {
   local origsize=$(wc -c < "$1")
   local gzipsize=$(gzip -c "$1" | wc -c)
   local ratio=$(echo "$gzipsize * 100/ $origsize" | bc -l)
@@ -177,8 +165,7 @@ function gz()
 
 # Syntax-highlight JSON strings or files
 # Usage: `json '{"foo":42}'` or `echo '{"foo":42}' | json`
-function json()
-{
+function json() {
   if [ -t 0 ]; then # argument
     python -mjson.tool <<< "$*" | pygmentize -l javascript
   else # pipe
@@ -187,8 +174,7 @@ function json()
 }
 
 # All the dig info
-function digga()
-{
+function digga() {
   dig +nocmd "$1" any +multiline +noall +answer
 }
 
