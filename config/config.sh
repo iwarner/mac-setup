@@ -40,5 +40,6 @@ COMPUTER_NAME="DryKISS"
 # tunnelblick   # VPN Client
 # utorrent      # Torrent downloading
 # virtual-box   # Required for IE Vms
+# vscode        # IDE
 
 SCRIPTS=(gcc homebrew zsh oh-my-zsh dotfiles ruby node ssh google-chrome tunnelblick utorrent virtual-box skype sketch)
