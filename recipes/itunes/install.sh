@@ -21,7 +21,7 @@ if [[ $ITUNES_CONTINE == y || $ITUNES_CONTINE == Y ]] ; then
   subheader "Link ITunes"
 
   if [ ! -f ~/Music/ITunes ] ; then
-    ln -s ~/Dropbox/Personal/ITunes ~/Music/ITunes
+    ln -s ~/DryKISS/i/i-tunes ~/Music/ITunes
   fi
 
 fi

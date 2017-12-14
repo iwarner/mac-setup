@@ -27,7 +27,7 @@ if [[ $SUBLIME_CONTINE == y || $SUBLIME_CONTINE == Y ]] ; then
   # Symlink snippets into codeblender.net
   # /Users/ianwarner/Dropbox/Service Files/Sublime Snippets
   mkdir ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/CodeBlender/
-  ln -s ~/DryKISS/Service\ Files/Sublime\ Snippets ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/CodeBlender
+  ln -s ~/DryKISS/s/sublime-3/snippets ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/CodeBlender
 
   # Install linter dependancies
 

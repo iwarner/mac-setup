@@ -41,4 +41,4 @@ COMPUTER_NAME="DryKISS"
 # utorrent      # Torrent downloading
 # virtual-box   # Required for IE Vms
 
-SCRIPTS=(gcc homebrew zsh oh-my-zsh dotfiles ruby node filesystem ssh google-chrome sublime tunnelblick utorrent virtual-box skype sketch)
+SCRIPTS=(gcc homebrew zsh oh-my-zsh dotfiles ruby node ssh google-chrome tunnelblick utorrent virtual-box skype sketch)
