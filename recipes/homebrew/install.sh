@@ -16,9 +16,6 @@
 #
 # @author Ian Warner <ian.warner@drykiss.com>
 # @category recipe
-#
-# @todo  Need to check that the URL returned 200 - Pause Script otherwise
-# @todo Check to see if .bashrc and .zshrc exist
 
 header "HomeBrew installation script"
 

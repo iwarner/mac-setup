@@ -14,8 +14,6 @@
 #
 # @author Ian Warner <ian.warner@drykiss.com>
 # @category recipe
-#
-# @todo Rename this recipe to Ruby and include all require GEMS in here
 
 # Variables
 VERSION=2.4.1

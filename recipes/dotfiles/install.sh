@@ -43,6 +43,6 @@ if [[ $DOTFILE_CONTINE == y || $DOTFILE_CONTINE == Y ]] ; then
   subheader "Copy .gitconfig"
 
   cp "$DOTFILES"/.gitconfig ~/.gitconfig
-  cp "$DOTFILES"/.gitignore_global ~/.gitignore_global
+  # cp "$DOTFILES"/.gitignore_global ~/.gitignore_global
 
 fi

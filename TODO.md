@@ -20,9 +20,29 @@
   > tmp > packagename
 - [ ] Try and find out where the terminal exits and what the error is - terminal.log with set -e
 
+## Apache
+
+- [ ] This should be created in a docker container
+- [ ] Create some standard conf files
+- [ ] PHP FPM setup
+- [ ] Change user and group for Apache to ones own. whoami
+
+## Docker
+
+- [ ] Download some common images and store them
+- [ ] Make sure the cask is updated before download - brew update or others
+
+## Dotfiles
+
+- [ ] Removing files will error on first time as they do not exist - check first
+- [ ] GitIgnore global errors says no file or directory - removed this - setup again for mac ignore
+
 ## Homebrew
 
-- [ ] ImageMagick Keg is missing - maybe spelling mistake
+- [ ] ImageMagick Keg is missing - maybe spelling mistake, maybe this is just on the removal - get specific error
+- [ ] Need to check that the URL returned 200 - Pause Script otherwise
+- [ ] Check to see if .bashrc and .zshrc exist
+- [ ] Script uninstalls imagemagick and graphicksmagick then re-installs check first -
 
 ## File Extensions
 
@@ -43,10 +63,10 @@
 - [ ] Remove and Add Items from the Dock - can use defaults or plist tools probably
 - [ ] Check that the OSX file works with Mavericks
 
-## Dotfiles
+## NGinx
 
-- [ ] Removing files will error on first time as they do not exist - check first
-- [ ] GitIgnore global errors says no file or directory
+- [ ] Finish the install script create as a docker container
+- [ ] Make it work with PHP FPM
 
 ## iTerm
 
@@ -103,7 +123,9 @@
 - [ ] Allow the user to choose the Version of Ruby they want from the Rbenv List - default to latest?
 - [ ] Check .gem folder exists before trying to remove
 - [ ] ruby install line 51 no bashrc file
-- [ ] Ruby gems update looking at older file - need to source the Rbenv before updating
+- [ ] Ruby gems update looking at older file system not rebenv - need to source the Rbenv before updating
+      Re-running solves this
+- [ ] Need to add a force so it overwrites the executable feedback
 
 ## Node
 
