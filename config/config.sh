@@ -34,6 +34,7 @@ COMPUTER_NAME="DryKISS"
 # 1password     # Installed from App Store
 # firefox       # Browser
 # google-chrome # Browser
+# imageoptim    # Image compression
 # sublime       # Text editor
 # sketch        # Graphics program
 # skype         # Communication
@@ -43,4 +44,4 @@ COMPUTER_NAME="DryKISS"
 # vlc           # Media player
 # vscode        # IDE
 
-SCRIPTS=(gcc homebrew zsh oh-my-zsh dotfiles ruby node ssh google-chrome sketch skype virtual-box vlc vscode)
+SCRIPTS=(gcc homebrew zsh oh-my-zsh dotfiles ruby node ssh google-chrome imageoptim sketch skype virtual-box vlc vscode)
