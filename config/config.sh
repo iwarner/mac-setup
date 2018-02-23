@@ -32,16 +32,20 @@ COMPUTER_NAME="DryKISS"
 #
 # Casks
 # 1password     # Installed from App Store
+# appcleaner    # App Cleaner removes unwanted applications
+# avg-antivirus # AVG Antivirus
 # firefox       # Browser
 # google-chrome # Browser
 # imageoptim    # Image compression
-# sublime       # Text editor
+# sequel-pro    # MYSQL viewer
 # sketch        # Graphics program
 # skype         # Communication
+# sublime       # Text editor
+# transmit4     # Transmit FTP software
 # tunnelblick   # VPN Client
 # utorrent      # Torrent downloading
 # virtual-box   # Required for IE Vms
 # vlc           # Media player
 # vscode        # IDE
 
-SCRIPTS=(gcc homebrew zsh oh-my-zsh dotfiles ruby node ssh google-chrome imageoptim sketch skype virtual-box vlc vscode)
+SCRIPTS=(gcc homebrew zsh oh-my-zsh dotfiles ruby node ssh 1password appcleaner avg-antivirus google-chrome imageoptim sketch skype virtual-box vlc vscode)

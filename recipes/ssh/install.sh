@@ -23,8 +23,8 @@ if [[ $SSH_CONTINE == y || $SSH_CONTINE == Y ]] ; then
   fi
 
   # SymLink Folder and Change Permissions
-  ln -s ~/DryKISS/s/ssh ~/.ssh
-  chmod -R 0700 ~/DryKISS/s/ssh/*
+  ln -s ~/Documents/s/ssh ~/.ssh
+  chmod -R 0700 ~/Documents/s/ssh/*
 
   # Symlink ssh to .ssh
   ln -s ~/.ssh ~/ssh
