@@ -5,7 +5,7 @@
 # @author Ian Warner <ian.warner@drykiss.com>
 # @category recipe
 
-header "Apple GCC installation script"
+header "Apple GCC"
 
 if ! has gcc ; then
 
@@ -19,8 +19,10 @@ else
   log "GCC installed"
 fi
 
-log "Set XCode select switch to Xcode App"
-sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer
+# log "Set XCode select switch to Xcode App"
+# sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer
 
-log "Install command line tools"
-xcode-select --install
+if ! has xcode-select ; then
+  log "Install command line tools"
+  xcode-select --install
+fi

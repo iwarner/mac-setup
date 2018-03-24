@@ -7,11 +7,13 @@
 #
 # @see https://www.skype.com/en/
 
-header "Install Skype"
+header "Skype"
 
-log "Continue (y/Y)"
-read SKYPE_CONTINE
+# Ask For Input
+read -p "Continue (y/Y) " -n 1 -r
 
-if [[ $SKYPE_CONTINE == y || $SKYPE_CONTINE == Y ]] ; then
+# Check Response
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
   brew cask install skype
 fi

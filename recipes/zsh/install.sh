@@ -5,13 +5,14 @@
 # @author Ian Warner <ian.warner@drykiss.com>
 # @category recipe
 
-header "Install ZSH shell"
+header "ZSH shell"
 
-log "Continue (y/Y)"
-read ZSH_CONTINE
+# Ask For Input
+read -p "Continue (y/Y) " -n 1 -r
 
-if [[ $ZSH_CONTINE == y || $ZSH_CONTINE == Y ]] ; then
-
+# Check Response
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
   # May need to create the .zsh file first so we can source this
 
   # Install ZSH

@@ -9,13 +9,14 @@
 # @see https://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme
 # @see https://github.com/Lokaltog/powerline-fonts/tree/master/Inconsolata
 
-header "Installing Oh My ZSH"
+header "Oh My ZSH"
 
-log "Continue (y/Y)"
-read OHMY_CONTINE
+# Ask For Input
+read -p "Continue (y/Y) " -n 1 -r
 
-if [[ $OHMY_CONTINE == y || $OHMY_CONTINE == Y ]] ; then
-
+# Check Response
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
   subheader "Downloading"
 
   if [ ! -d  ~/.oh-my-zsh ]; then

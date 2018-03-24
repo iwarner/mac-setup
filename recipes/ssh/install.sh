@@ -5,12 +5,14 @@
 # @author Ian Warner <ian.warner@drykiss.com>
 # @category recipe
 
-header 'SSH configuration'
+header 'SSH'
 
-log 'Continue (y/Y)'
-read SSH_CONTINE
+# Ask For Input
+read -p "Continue (y/Y) " -n 1 -r
 
-if [[ $SSH_CONTINE == y || $SSH_CONTINE == Y ]] ; then
+# Check Response
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
 
   subheader 'Remove .ssh and ssh directories if they exist'
 

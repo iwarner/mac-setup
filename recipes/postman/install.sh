@@ -6,11 +6,13 @@
 # @category recipe
 # @see https://www.getpostman.com/
 
-header "Install Postman"
+header "Postman"
 
-log "Continue (y/Y)"
-read POSTMAN_CONTINE
+# Ask For Input
+read -p "Continue (y/Y) " -n 1 -r
 
-if [[ $POSTMAN_CONTINE == y || $POSTMAN_CONTINE == Y ]] ; then
+# Check Response
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
   brew cask install postman
 fi

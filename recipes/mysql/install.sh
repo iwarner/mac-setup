@@ -15,12 +15,14 @@
 # @author Ian Warner <ian.warner@drykiss.com>
 # @category recipe
 
-header "MySQL Installation Script"
+header "MySQL"
 
-log "Continue (y/Y)"
-read MYSQL_CONTINE
+# Ask For Input
+read -p "Continue (y/Y) " -n 1 -r
 
-if [[ $MYSQL_CONTINE == y || $MYSQL_CONTINE == Y ]] ; then
+# Check Response
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
 
   subheader "Brew Install MySQL"
 

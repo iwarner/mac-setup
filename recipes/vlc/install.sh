@@ -7,11 +7,13 @@
 #
 # @see https://www.videolan.org/index.html
 
-header "Install VLC"
+header "VLC"
 
-log "Continue (y/Y)"
-read VLC_CONTINE
+# Ask For Input
+read -p "Continue (y/Y) " -n 1 -r
 
-if [[ $VLC_CONTINE == y || $VLC_CONTINE == Y ]] ; then
+# Check Response
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
   brew cask install vlc
 fi

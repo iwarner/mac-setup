@@ -7,11 +7,13 @@
 #
 # @see https://www.skype.com/en/
 
-header "Install ImageOptim"
+header "ImageOptim"
 
-log "Continue (y/Y)"
-read IMAGEOPTIM_CONTINE
+# Ask For Input
+read -p "Continue (y/Y) " -n 1 -r
 
-if [[ $IMAGEOPTIM_CONTINE == y || $IMAGEOPTIM_CONTINE == Y ]] ; then
+# Check Response
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
   brew cask install imageoptim
 fi

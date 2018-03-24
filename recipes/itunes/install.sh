@@ -5,12 +5,14 @@
 # @author Ian Warner <ian.warner@drykiss.com>
 # @category recipe
 
-header "ITunes symlink"
+header "ITunes"
 
-log "Continue (y/Y)"
-read ITUNES_CONTINE
+# Ask For Input
+read -p "Continue (y/Y) " -n 1 -r
 
-if [[ $ITUNES_CONTINE == y || $ITUNES_CONTINE == Y ]] ; then
+# Check Response
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
 
   subheader "Remove user Default ITunes folder"
 

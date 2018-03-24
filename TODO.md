@@ -98,25 +98,9 @@
 - [ ] Add optipng
 - [ ] Replicate ImageOptim
 
-## Image Optim
-
-- [ ] Add this to the casks
-
 ## Virtual Box
 
 - [ ] Fails as it asks for permissions outside the standard install
-
-## VSCode
-
-- [ ] Add this to the casks
-
-## uTorrent
-
-- [ ] Remove does not exist anymore
-
-## TunnelBlick
-
-- [ ] Remove not needed
 
 ## Ruby
 

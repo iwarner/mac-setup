@@ -12,13 +12,14 @@
 #
 # @see http://nodejs.org/
 
-header "Install Node & NPM"
+header "Node & NPM"
 
-log "Continue (y/Y)"
-read NODE_CONTINE
+# Ask For Input
+read -p "Continue (y/Y) " -n 1 -r
 
-if [[ $NODE_CONTINE == y || $NODE_CONTINE == Y ]] ; then
-
+# Check Response
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
   # Install NVM - follow the caveats
   brew install nvm
 
@@ -40,5 +41,4 @@ if [[ $NODE_CONTINE == y || $NODE_CONTINE == Y ]] ; then
   npm set init.author.url   "https://drykiss.com"
 
   npm adduser
-
 fi

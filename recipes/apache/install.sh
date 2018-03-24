@@ -7,11 +7,13 @@
 #
 # @see https://github.com/humanmade/hm-dev/wiki/Setup-a-local-dev-environment-on-Mac-OSX-Lion
 
-header "Installing Apache"
+header "Apache"
 
-log "Continue (y/Y)"
-read APACHE_CONTINE
+# Ask For Input
+read -p "Continue (y/Y) " -n 1 -r
 
-if [[ $APACHE_CONTINE == y || $APACHE_CONTINE == Y ]] ; then
+# Check Response
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
   brew install apache
 fi

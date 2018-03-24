@@ -7,11 +7,13 @@
 #
 # @see https://www.sketchapp.com/
 
-header "Install Sketch"
+header "Sketch"
 
-log "Continue (y/Y)"
-read SKETCH_CONTINE
+# Ask For Input
+read -p "Continue (y/Y) " -n 1 -r
 
-if [[ $SKETCH_CONTINE == y || $SKETCH_CONTINE == Y ]] ; then
+# Check Response
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
   brew cask install sketch
 fi

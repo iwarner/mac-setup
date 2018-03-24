@@ -1,17 +1,20 @@
 #!/usr/bin/env bash
 
 # Visual Studio Code
+# GistID 3de8f37bca0814fefb8ef8e11f3aa538
 #
 # @author Ian Warner <ian.warner@drykiss.com>
 # @category recipe
 #
 # @see https://code.visualstudio.com/
 
-header "Install Visual Studio Code"
+header "Visual Studio Code"
 
-log "Continue (y/Y)"
-read VSCODE_CONTINE
+# Ask For Input
+read -p "Continue (y/Y) " -n 1 -r
 
-if [[ $VSCODE_CONTINE == y || $VSCODE_CONTINE == Y ]] ; then
+# Check Response
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
   brew cask install visual-studio-code
 fi

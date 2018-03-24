@@ -23,12 +23,14 @@
 # @author Ian Warner <ian.warner@drykiss.com>
 # @category recipe
 
-header "PHP Installation Script"
+header "PHP"
 
-log "Continue (y/Y)"
-read PHP_CONTINE
+# Ask For Input
+read -p "Continue (y/Y) " -n 1 -r
 
-if [[ $PHP_CONTINE == y || $PHP_CONTINE == Y ]] ; then
+# Check Response
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
 
   # Install the latest PHP via HomeBrew
   brew update

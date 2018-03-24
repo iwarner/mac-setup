@@ -7,13 +7,14 @@
 #
 # @see https://gist.github.com/bjorgvino/f24e5c079b92f921b765
 
-header "Install NTFS"
+header "NTFS"
 
-log "Continue (y/Y)"
-read NTFS_CONTINE
+# Ask For Input
+read -p "Continue (y/Y) " -n 1 -r
 
-if [[ $NTFS_CONTINE == y || $NTFS_CONTINE == Y ]] ; then
-
+# Check Response
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
   # Uninstall
   brew uninstall osxfuse
   brew uninstall ntfs-3g
@@ -30,5 +31,4 @@ if [[ $NTFS_CONTINE == y || $NTFS_CONTINE == Y ]] ; then
   # sudo mv /sbin/mount_ntfs /sbin/mount_ntfs.original
   # sudo ln -s /usr/local/sbin/mount_ntfs /sbin/mount_ntfs
   # ls -l /sbin/mount_ntfs*
-
 fi

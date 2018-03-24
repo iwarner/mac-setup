@@ -5,11 +5,13 @@
 # @author Ian Warner <ian.warner@drykiss.com>
 # @category recipe
 
-header "Install AVG"
+header "AVG Antivirus"
 
-log "Continue (y/Y)"
-read AVG_CONTINE
+# Ask For Input
+read -p "Continue (y/Y) " -n 1 -r
 
-if [[ $AVG_CONTINE == y || $AVG_CONTINE == Y ]] ; then
+# Check Response
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
   brew cask install avg-antivirus
 fi

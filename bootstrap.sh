@@ -13,14 +13,20 @@
 # @author Ian Warner <ian.warner@drykiss.com>
 # @category recipe
 
+# Clear
+clear
+
+# Export
+export BASH_PATH
+
 # Path
 BASH_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Include Config
-. "$BASH_PATH"/config/config.sh
+. "${BASH_PATH}/lib/config.sh"
 
 # Include Functions
-. "$BASH_PATH"/lib/functions.sh
+. "${BASH_PATH}/lib/functions.sh"
 
 # Welcome Message
 hello "Setup Script" "This will set up the necessary software for MAC OSX Development"
@@ -31,12 +37,12 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until script has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-# Ask user if they wish to continue
-log "Continue? (y/Y)"
-read CONTINUE
+# Ask For Input
+read -p "Continue (y/Y) " -n 1 -r
 
-# Proceed if the user answered y or Y
-if [[ $CONTINUE == y || $CONTINUE == Y ]] ; then
+# Check Response
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
 
   # Loop through the Scripts array
   for i in "${SCRIPTS[@]}"; do

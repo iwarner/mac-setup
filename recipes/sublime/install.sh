@@ -6,12 +6,14 @@
 # @category recipe
 
 # Header
-header "Sublime Text Configuration"
+header "Sublime"
 
-log "Continue (y/Y)"
-read SUBLIME_CONTINE
+# Ask For Input
+read -p "Continue (y/Y) " -n 1 -r
 
-if [[ $SUBLIME_CONTINE == y || $SUBLIME_CONTINE == Y ]] ; then
+# Check Response
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
 
   # Install Sublime
   brew cask install sublime-text

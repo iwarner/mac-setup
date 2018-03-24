@@ -7,11 +7,13 @@
 #
 # @see https://www.skype.com/en/
 
-header "Install Transmit"
+header "Transmit"
 
-log "Continue (y/Y)"
-read TRANSMIT_CONTINE
+# Ask For Input
+read -p "Continue (y/Y) " -n 1 -r
 
-if [[ $TRANSMIT_CONTINE == y || $TRANSMIT_CONTINE == Y ]] ; then
+# Check Response
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
   brew cask install transmit4
 fi

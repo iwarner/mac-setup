@@ -5,12 +5,14 @@
 # @author Ian Warner <ian.warner@drykiss.com>
 # @category recipe
 
-header "Install Fonts"
+header "Fonts"
 
-log "Continue (y/Y)"
-read FONT_CONTINE
+# Ask For Input
+read -p "Continue (y/Y) " -n 1 -r
 
-if [[ $FONT_CONTINE == y || $FONT_CONTINE == Y ]] ; then
+# Check Response
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
   brew tap caskroom/fonts
-  brew cask install font-inconsolata
+  brew cask install "${FONTS[@]}"
 fi

@@ -5,11 +5,13 @@
 # @author Ian Warner <ian.warner@drykiss.com>
 # @category recipe
 
-header "Install App Cleaner"
+header "App Cleaner"
 
-log "Continue (y/Y)"
-read APPCLEANER_CONTINE
+# Ask For Input
+read -p "Continue (y/Y) " -n 1 -r
 
-if [[ $APPCLEANER_CONTINE == y || $APPCLEANER_CONTINE == Y ]] ; then
+# Check Response
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
   brew cask install appcleaner
 fi

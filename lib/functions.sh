@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # Functions
+#
 # Colours
 # http://tldp.org/LDP/abs/html/colorizing.html
 # http://www.tldp.org/HOWTO/Bash-Prompt-HOWTO/x405.html
@@ -74,6 +75,3 @@ fi
 function has () {
   type "$1" >/dev/null 2>&1
 }
-
-# Clear the screen
-clear

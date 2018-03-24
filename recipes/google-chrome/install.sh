@@ -5,11 +5,13 @@
 # @author Ian Warner <ian.warner@drykiss.com>
 # @category recipe
 
-header "Install Google Chrome"
+header "Google Chrome"
 
-log "Continue (y/Y)"
-read CHROME_CONTINE
+# Ask For Input
+read -p "Continue (y/Y) " -n 1 -r
 
-if [[ $CHROME_CONTINE == y || $CHROME_CONTINE == Y ]] ; then
+# Check Response
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
   brew cask install google-chrome
 fi

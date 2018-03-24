@@ -5,11 +5,13 @@
 # @author Ian Warner <ian.warner@drykiss.com>
 # @category recipe
 
-header "Install 1Password"
+header "1Password"
 
-log "Continue (y/Y)"
-read PASSWORD_CONTINE
+# Ask For Input
+read -p "Continue (y/Y) " -n 1 -r
 
-if [[ $PASSWORD_CONTINE == y || $PASSWORD_CONTINE == Y ]] ; then
+# Check Response
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
   brew cask install 1password
 fi

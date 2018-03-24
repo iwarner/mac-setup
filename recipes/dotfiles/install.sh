@@ -5,13 +5,14 @@
 # @author Ian Warner <ian.warner@drykiss.com>
 # @category recipe
 
-header 'Installing Dotfiles'
+header 'Dotfiles'
 
-log "Continue (y/Y)"
-read DOTFILE_CONTINE
+# Ask For Input
+read -p "Continue (y/Y) " -n 1 -r
 
-if [[ $DOTFILE_CONTINE == y || $DOTFILE_CONTINE == Y ]] ; then
-
+# Check Response
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
   subheader "Overwrite ~/.zshrc and ~/.zprofile files"
 
   cp "$DOTFILES"/.zshrc ~/.zshrc
@@ -43,6 +44,6 @@ if [[ $DOTFILE_CONTINE == y || $DOTFILE_CONTINE == Y ]] ; then
   subheader "Copy .gitconfig"
 
   cp "$DOTFILES"/.gitconfig ~/.gitconfig
-  # cp "$DOTFILES"/.gitignore_global ~/.gitignore_global
+  cp "$DOTFILES"/.gitignore_global ~/.gitignore_global
 
 fi

@@ -10,12 +10,12 @@
 
 header 'Docker'
 
-log "Continue (y/Y)"
-read DOCKER_CONTINE
+# Ask For Input
+read -p "Continue (y/Y) " -n 1 -r
 
-if [[ $DOCKER_CONTINE == y || $DOCKER_CONTINE == Y ]] ; then
-
+# Check Response
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
   # Symlink in the library folder
   brew cask install docker
-
 fi

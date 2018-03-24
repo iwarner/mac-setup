@@ -16,15 +16,17 @@
 # @category recipe
 
 # Variables
-VERSION=2.4.1
+# VERSION=2.4.1
 
 # Header
-header "RBENV Installation Script"
+header "Ruby"
 
-log "Continue (y/Y)"
-read RBENV_CONTINE
+# Ask For Input
+read -p "Continue (y/Y) " -n 1 -r
 
-if [[ $RBENV_CONTINE == y || $RBENV_CONTINE == Y ]] ; then
+# Check Response
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
 
   subheader "Brew Update"
   brew update
@@ -37,10 +39,10 @@ if [[ $RBENV_CONTINE == y || $RBENV_CONTINE == Y ]] ; then
   subheader "Install Ruby Version"
 
   # Install version
-  rbenv install $VERSION
+  rbenv install $RUBY_VERSION
 
   # Set as global
-  rbenv global $VERSION
+  rbenv global $RUBY_VERSION
   rbenv rehash
 
   # Remove User Gems folder
@@ -58,8 +60,7 @@ if [[ $RBENV_CONTINE == y || $RBENV_CONTINE == Y ]] ; then
 
   rbenv rehash
 
-  gem install --no-ri --no-rdoc bundler
-  gem install --no-ri --no-rdoc thor
+  gem install --no-ri --no-rdoc "${GEMS[@]}"
 
   rbenv rehash
 fi

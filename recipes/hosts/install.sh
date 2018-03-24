@@ -6,7 +6,7 @@
 # @author Ian Warner <ian.warner@drykiss.com>
 # @category recipe
 
-header "HOST File Link"
+header "HOST File"
 
 subheader "Replace current hosts file"
 

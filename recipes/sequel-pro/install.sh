@@ -5,11 +5,13 @@
 # @author Ian Warner <ian.warner@drykiss.com>
 # @category recipe
 
-header "Install Sequel Pro"
+header "Sequel Pro"
 
-log "Continue (y/Y)"
-read SEQUEL_CONTINE
+# Ask For Input
+read -p "Continue (y/Y) " -n 1 -r
 
-if [[ $SEQUEL_CONTINE == y || $SEQUEL_CONTINE == Y ]] ; then
+# Check Response
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
   brew cask install sequel-pro
 fi
