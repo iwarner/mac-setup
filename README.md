@@ -56,3 +56,22 @@ Edit the dotfiles file with your specific details i.e. .gitconfig username and e
 ## Changelog
 
 [Changelog](CHANGELOG.md)
+
+## Backup
+
+Backup -> DryKISS Portable
+
+rsync --perms \
+      --owner \
+      --group \
+      --times \
+      --links \
+      --devices \
+      --delete \
+      --recursive \
+      --progress \
+      --human-readable \
+      --exclude node_modules \
+      --exclude .DS_Store \
+      ~/Documents/ \
+      /volumes/DryKISS

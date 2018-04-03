@@ -58,6 +58,7 @@ export BREWS=(
   graphicsmagick
   imagemagick
   openssl
+  rsync
   wget
   wifi-password
 )
