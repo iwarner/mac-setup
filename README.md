@@ -59,7 +59,7 @@ Edit the dotfiles file with your specific details i.e. .gitconfig username and e
 
 ## Backup
 
-Backup -> DryKISS Portable
+Mac -> DryKISS Portable
 
 rsync --perms \
       --owner \
@@ -68,6 +68,8 @@ rsync --perms \
       --links \
       --devices \
       --delete \
+      --delete-excluded \
+      --ignore-errors \
       --recursive \
       --progress \
       --human-readable \
