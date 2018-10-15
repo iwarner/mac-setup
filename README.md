@@ -59,7 +59,7 @@ Edit the dotfiles file with your specific details i.e. .gitconfig username and e
 
 ## Backup
 
-Mac -> DryKISS Portable
+Mac Book -> DryKISS Portable
 
 rsync --perms \
       --owner \
@@ -77,3 +77,61 @@ rsync --perms \
       --exclude .DS_Store \
       ~/Documents/ \
       /volumes/DryKISS
+
+DryKISS Portable -> Mac Book
+
+rsync --perms \
+      --owner \
+      --group \
+      --times \
+      --links \
+      --devices \
+      --delete \
+      --delete-excluded \
+      --ignore-errors \
+      --recursive \
+      --progress \
+      --human-readable \
+      --exclude node_modules \
+      --exclude .DS_Store \
+      /volumes/DryKISS/ \
+      ~/Documents
+
+iMac -> DryKISS Portable
+
+rsync --perms \
+      --owner \
+      --group \
+      --times \
+      --links \
+      --devices \
+      --delete \
+      --delete-excluded \
+      --ignore-errors \
+      --recursive \
+      --progress \
+      --human-readable \
+      --exclude node_modules \
+      --exclude .DS_Store \
+      ~/Documents/ \
+      /volumes/DryKISS\ 1
+
+DryKISS Portable -> iMac
+
+rsync --perms \
+      --owner \
+      --group \
+      --times \
+      --links \
+      --devices \
+      --delete \
+      --delete-excluded \
+      --ignore-errors \
+      --recursive \
+      --progress \
+      --human-readable \
+      --exclude node_modules \
+      --exclude .DS_Store \
+      /volumes/DryKISS\ 1/ \
+      ~/Documents
+
