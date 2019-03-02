@@ -11,7 +11,7 @@ function update() {
   brew update
   brew upgrade
   brew cleanup
-  brew prune
+  brew cleanup --prune-prefix
 
   # NPM
   npm -g update
