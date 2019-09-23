@@ -1,16 +1,9 @@
 #!/usr/bin/env bash
 
-# ZSH Recipe
-#
-# @author Ian Warner <ian.warner@drykiss.com>
-# @category recipe
-
 header "ZSH shell"
 
-# Ask For Input
 read -p "Continue (y/Y) " -n 1 -r
 
-# Check Response
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
   # May need to create the .zsh file first so we can source this

@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-# PHP Recipe
 # https://github.com/josegonzalez/homebrew-php
 # To enable PHP in Apache add the following to httpd.conf and restart Apache:
 #     LoadModule php5_module    /usr/local/opt/php54/libexec/apache2/libphp5.so
@@ -19,16 +18,11 @@
 # ✩✩✩✩ PHP CLI ✩✩✩✩
 # If you wish to swap the PHP you use on the command line, you should add the following to ~/.bashrc,
 # ~/.zshrc, ~/.profile or your shell's equivalent configuration file:
-#
-# @author Ian Warner <ian.warner@drykiss.com>
-# @category recipe
 
 header "PHP"
 
-# Ask For Input
 read -p "Continue (y/Y) " -n 1 -r
 
-# Check Response
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
 

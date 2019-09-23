@@ -3,11 +3,8 @@
 # Config
 # Defines what scripts to run through the bootstrap
 #
-# @author Ian Warner <ian.warner@drykiss.com>
-# @category recipe
-#
 # @todo Add in the NPM / GEM  and Brew Program to install
-
+# @todo Move application install recipes to recipes/apps
 
 # Variables
 CURRENT_DIR=`pwd`
@@ -28,17 +25,27 @@ SCRIPTS=(
   ruby           # Installs an Ruby version control package
   node           # NVM Node version manager is required for NPM package manager
   ssh            # Copy SSH from dropbox to .ssh
+  # hosts          # Update hosts files
   1password      # Installed from App Store
+  # apache         # Web server
   appcleaner     # App Cleaner removes unwanted applications
   avg            # AVG Antivirus
+  # docker         # Container
   google-chrome  # Browser
   imageoptim     # Image compression
-  sketch         # Graphics program
+  mysql          # Relational database
+  # ntfs         # Drive system
+  # php          # Server side langauge
+  postman        # API Tester
+  sequel-pro     # MySQL GUi
+  # sketch         # Graphics program
   skype          # Communication
-  virtual-box    # Required for IE Vms
+  # sublime        # Text editor
+  # transmit     # FTP client
+  # virtual-box    # Required for IE Vms
   vlc            # Media player
   vscode         # IDE
-  osx            # OSX default settings
+  # osx            # OSX default settings
 )
 
 export GEMS=(
@@ -59,6 +66,7 @@ export BREWS=(
   imagemagick
   openssl
   rsync
+  yarn
   wget
   wifi-password
 )

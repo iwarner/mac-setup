@@ -1,16 +1,9 @@
 #!/usr/bin/env bash
 
-# Dotfiles
-#
-# @author Ian Warner <ian.warner@drykiss.com>
-# @category recipe
-
 header 'Dotfiles'
 
-# Ask For Input
 read -p "Continue (y/Y) " -n 1 -r
 
-# Check Response
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
   subheader "Overwrite ~/.zshrc and ~/.zprofile files"

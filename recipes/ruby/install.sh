@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-# Ruby Recipe
-#
 # https://github.com/sstephenson/rbenv/
 #
 # To use Homebrew's directories rather than ~/.rbenv add
@@ -11,20 +9,14 @@
 # if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 #
 # rbenv install -l
-#
-# @author Ian Warner <ian.warner@drykiss.com>
-# @category recipe
 
 # Variables
 # VERSION=2.4.1
 
-# Header
 header "Ruby"
 
-# Ask For Input
 read -p "Continue (y/Y) " -n 1 -r
 
-# Check Response
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
 

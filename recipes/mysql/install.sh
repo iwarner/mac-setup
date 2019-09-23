@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-# MySQL Recipe
-#
-# Caveats
-#
 # A "/etc/my.cnf" from another install may interfere with a
 # Homebrew-built
 #
@@ -11,16 +7,11 @@
 # $ mysql.server start
 # $ mysql -uroot
 # $ quit
-#
-# @author Ian Warner <ian.warner@drykiss.com>
-# @category recipe
 
 header "MySQL"
 
-# Ask For Input
 read -p "Continue (y/Y) " -n 1 -r
 
-# Check Response
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
 

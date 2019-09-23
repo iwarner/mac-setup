@@ -14,9 +14,6 @@
 # cyan    36  46
 # white   37  47
 # echo -e "\033[1;41mThis is bold text.\033[0m"
-#
-# @author Ian Warner <ian.warner@drykiss.com>
-# @category recipe
 
 # Abort
 function abort () {

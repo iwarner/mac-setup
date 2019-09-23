@@ -1,22 +1,12 @@
 #!/usr/bin/env bash
-
-# HomeBrew Install
-#
-# @author Ian Warner <ian.warner@drykiss.com>
-# @category recipe
-#
 # @see http://brew.sh
-#
 # @todo check out git https://coderwall.com/p/7aymfa/please-oh-please-use-git-pull-rebase
 # @todo Set up git as a standalone recipe - has its own dotfile also
 
-
 header "Homebrew"
 
-# Ask For Input
 read -p "Continue (y/Y) " -n 1 -r
 
-# Check Response
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
 

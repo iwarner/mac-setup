@@ -1,29 +1,20 @@
 # .zprofile DotFile
-#  Place custom aliases within this file
+# Place custom aliases within this file
 # http://www.cyberciti.biz/tips/bash-aliases-mac-centos-linux-unix.html
 
 # GIT
 alias ggpull='ggl'
 alias ggpush='ggp'
 
-# Folder Launch
-alias folder.w='~/Dropbox/www/'
-alias folder.dk='/var/www/DryKISS'
-
 # Shortcuts
-alias dk="cd ~/DryKISS"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias h="history"
 alias j="jobs"
 
 # Programs
-alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
-
-# Laravel
-alias artisan="php artisan"
 
 # List only directories
 alias lsd='ls -lF ${colorflag} | grep "^d"'

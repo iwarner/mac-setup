@@ -135,3 +135,6 @@ rsync --perms \
       /volumes/DryKISS\ 1/ \
       ~/Documents
 
+## Bootable USB
+
+- $ sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume

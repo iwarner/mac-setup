@@ -15,7 +15,7 @@ function update() {
 
   # NPM
   npm -g update
-  npm -g cache clean
+  npm -g --force cache clean
 
   # Gem
   gem update --no-ri --no-rdo --system

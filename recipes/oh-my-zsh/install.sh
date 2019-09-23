@@ -1,10 +1,5 @@
 #!/usr/bin/env bash
 
-# Oh My ZSH Recipe
-#
-# @author Ian Warner <ian.warner@drykiss.com>
-# @category recipe
-#
 # @see https://github.com/robbyrussell/oh-my-zsh
 # @see https://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme
 # @see https://github.com/Lokaltog/powerline-fonts/tree/master/Inconsolata

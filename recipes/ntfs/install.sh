@@ -1,10 +1,4 @@
 #!/usr/bin/env bash
-
-# NTFS
-#
-# @author Ian Warner <ian.warner@drykiss.com>
-# @category recipe
-#
 # @see https://gist.github.com/bjorgvino/f24e5c079b92f921b765
 
 header "NTFS"
