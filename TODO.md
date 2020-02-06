@@ -15,7 +15,7 @@
 - [ ] Make the script work with installing Zip files and PKG files.
 - [ ] Create a documentation wiki
 - [ ] Can I check for network connection through bash
-  ping -q -w 1 -c 1 `ip r | grep default | cut -d ' ' -f 3` > /dev/null && echo ok || echo error
+      ping -q -w 1 -c 1 `ip r | grep default | cut -d ' ' -f 3` > /dev/null && echo ok || echo error
 - [ ]Store the downloaded files in folder marking the versions specified in options
   > tmp > packagename
 - [ ] Try and find out where the terminal exits and what the error is - terminal.log with set -e
@@ -47,15 +47,7 @@
 ## File Extensions
 
 - [ ] Change file extensions associated to programs
-  - [ ] erb, haml, rb etc should be opened by Sublime Test 3
   - [ ] Apple LaunchCtrl should do the trick here
-
-## Sublime Text 3
-
-- [ ] Create recipe for Sublime 3
-- [ ] Expand the sublime project files with the correct settings.
-- [ ] Sublime Linter and Ruby configuration
-  http://stackoverflow.com/questions/9153210/configuring-the-sublime-linter-plugin-to-use-ruby-1-9-syntax
 
 ## OSX / XCode / GCC
 
@@ -87,8 +79,8 @@
 - [ ] PearRC caveat for PHP5
 
   if -f ~/.pearrc
-    then
-      sudo mv -f ~/.pearrc ~/.pearrc.bk
+  then
+  sudo mv -f ~/.pearrc ~/.pearrc.bk
   fi
 
 ## Image Optimisation
@@ -128,5 +120,5 @@ The command-line package to do this is p7zip, specifically the 7za command.
 It's available through MacPorts or Fink. A typical extract command: 7za x archive.7z
 
 To extract all the 7z files under a directory you'd do something like this:
-find <startdir> -name "*.7z" -exec 7za x {} \;
+find <startdir> -name "\*.7z" -exec 7za x {} \;
 (where <startdir> is the top-level directory containing all the archives).

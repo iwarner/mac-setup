@@ -22,9 +22,9 @@ then
   source ~/.nvm/nvm.sh
 
   # Install Node
-  nvm install stable
-  nvm use stable
-  nvm alias default stable
+  nvm install --lts
+  nvm use --lts
+  nvm alias default --lts
 
   # Set NPM User
   # https://gist.github.com/coolaj86/1318304

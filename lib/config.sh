@@ -30,7 +30,9 @@ SCRIPTS=(
   # apache         # Web server
   appcleaner     # App Cleaner removes unwanted applications
   avg            # AVG Antivirus
+  clickup        # Project management
   # docker         # Container
+  figma           # Graphics program
   google-chrome  # Browser
   imageoptim     # Image compression
   mysql          # Relational database
@@ -40,7 +42,6 @@ SCRIPTS=(
   sequel-pro     # MySQL GUi
   # sketch         # Graphics program
   skype          # Communication
-  # sublime        # Text editor
   # transmit     # FTP client
   # virtual-box    # Required for IE Vms
   vlc            # Media player

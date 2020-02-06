@@ -12,10 +12,6 @@ alias dt="cd ~/Desktop"
 alias h="history"
 alias j="jobs"
 
-# Programs
-alias zshconfig="subl ~/.zshrc"
-alias ohmyzsh="subl ~/.oh-my-zsh"
-
 # List only directories
 alias lsd='ls -lF ${colorflag} | grep "^d"'
 

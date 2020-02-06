@@ -62,79 +62,82 @@ Edit the dotfiles file with your specific details i.e. .gitconfig username and e
 Mac Book -> DryKISS Portable
 
 rsync --perms \
-      --owner \
-      --group \
-      --times \
-      --links \
-      --devices \
-      --delete \
-      --delete-excluded \
-      --ignore-errors \
-      --recursive \
-      --progress \
-      --human-readable \
-      --exclude node_modules \
-      --exclude .DS_Store \
-      ~/Documents/ \
-      /volumes/DryKISS
+ --owner \
+ --group \
+ --times \
+ --links \
+ --devices \
+ --delete \
+ --delete-excluded \
+ --ignore-errors \
+ --recursive \
+ --progress \
+ --human-readable \
+ --exclude node_modules \
+ --exclude .DS_Store \
+ ~/Documents/ \
+ /Volumes/DryKISS
 
 DryKISS Portable -> Mac Book
 
 rsync --perms \
-      --owner \
-      --group \
-      --times \
-      --links \
-      --devices \
-      --delete \
-      --delete-excluded \
-      --ignore-errors \
-      --recursive \
-      --progress \
-      --human-readable \
-      --exclude node_modules \
-      --exclude .DS_Store \
-      /volumes/DryKISS/ \
-      ~/Documents
+ --owner \
+ --group \
+ --times \
+ --links \
+ --devices \
+ --delete \
+ --delete-excluded \
+ --ignore-errors \
+ --recursive \
+ --progress \
+ --human-readable \
+ --exclude node_modules \
+ --exclude .DS_Store \
+ /Volumes/DryKISS/ \
+ ~/Documents
 
 iMac -> DryKISS Portable
 
 rsync --perms \
-      --owner \
-      --group \
-      --times \
-      --links \
-      --devices \
-      --delete \
-      --delete-excluded \
-      --ignore-errors \
-      --recursive \
-      --progress \
-      --human-readable \
-      --exclude node_modules \
-      --exclude .DS_Store \
-      ~/Documents/ \
-      /volumes/DryKISS\ 1
+ --owner \
+ --group \
+ --times \
+ --links \
+ --devices \
+ --delete \
+ --delete-excluded \
+ --ignore-errors \
+ --recursive \
+ --progress \
+ --human-readable \
+ --exclude node_modules \
+ --exclude .DS_Store \
+ ~/Documents/ \
+ /Volumes/DryKISS\ 1
 
 DryKISS Portable -> iMac
 
 rsync --perms \
-      --owner \
-      --group \
-      --times \
-      --links \
-      --devices \
-      --delete \
-      --delete-excluded \
-      --ignore-errors \
-      --recursive \
-      --progress \
-      --human-readable \
-      --exclude node_modules \
-      --exclude .DS_Store \
-      /volumes/DryKISS\ 1/ \
-      ~/Documents
+ --owner \
+ --group \
+ --times \
+ --links \
+ --devices \
+ --delete \
+ --delete-excluded \
+ --ignore-errors \
+ --recursive \
+ --progress \
+ --human-readable \
+ --exclude .DS_Store \
+ --exclude m/movies \
+ --exclude .next \
+--exclude node_modules \
+/Volumes/DryKISS/ \
+ ~/Documents
 
 ## Bootable USB
 
-- $ sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
+- \$ sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
+- \$ sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume

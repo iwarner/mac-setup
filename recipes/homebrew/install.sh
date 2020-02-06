@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # @see http://brew.sh
+
 # @todo check out git https://coderwall.com/p/7aymfa/please-oh-please-use-git-pull-rebase
 # @todo Set up git as a standalone recipe - has its own dotfile also
 
@@ -45,14 +46,9 @@ then
     brew update && brew upgrade
   fi
 
-  # Install Casks
-  subheader "Brew install Casks"
-  brew tap caskroom/cask || { log "Dupes already Tapped"; }
-
   # Install Formula
   subheader "Install Formula"
 
   # Install Brews
   brew install "${BREWS[@]}"
-
 fi
