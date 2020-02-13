@@ -114,7 +114,7 @@ rsync --perms \
  --exclude node_modules \
  --exclude .DS_Store \
  ~/Documents/ \
- /Volumes/DryKISS\ 1
+ /Volumes/DryKISS
 
 DryKISS Portable -> iMac
 
@@ -133,9 +133,9 @@ rsync --perms \
  --exclude .DS_Store \
  --exclude m/movies \
  --exclude .next \
---exclude node_modules \
+ --exclude node_modules \
 /Volumes/DryKISS/ \
- ~/Documents
+~/Documents
 
 ## Bootable USB
 
