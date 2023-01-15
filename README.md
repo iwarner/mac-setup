@@ -20,26 +20,26 @@ Thank you.
 
 The latest XCode must be installed before initiating these scripts
 
-The script assume an install directory of
+The script assumes an install directory of
 
-    $ cd ~"/Dropbox/Service Files/Server Local/Setup"
+    $ cd ~"/Documents/m/mac-setup"
 
 Please create this directory and then git clone the repository
 
-    $ mkdir -p ~/Dropbox/Server\ Files/Server\ Local/
-    $ git clone git@github.com:DryKiss/mac-setup.git ~/Dropbox/Server\ Files/Server\ Local/Setup
+    $ mkdir -p ~/Documents/m/mac-setup
+    $ git clone git@github.com:DryKiss/mac-setup.git ~/Documents/m/mac-setup
 
 ## Usage
 
 Make sure the bootstrap.sh is executable
 
-    $ cd ~"/Dropbox/Server Files/Server Local/Setup"
+    $ cd ~/Documents/m/mac-setup
     $ chmod u+x ./bootstrap.sh
 
 Edit the script to uncomment the items that need installing, leaving everything
 uncommented should be fine as there are checks to see if items are already configured.
 
-    $ cd ~"/Dropbox/Server Files/Server Local/Setup"
+    $ cd ~/Documents/m/mac-setup
     $ ./bootstrap.sh
 
 Dotfiles should be edited here; or appended too when other programs edit them.
@@ -73,8 +73,9 @@ rsync --perms \
  --recursive \
  --progress \
  --human-readable \
- --exclude node_modules \
  --exclude .DS_Store \
+ --exclude .next \
+ --exclude node_modules \
  ~/Documents/ \
  /Volumes/DryKISS
 
@@ -111,8 +112,9 @@ rsync --perms \
  --recursive \
  --progress \
  --human-readable \
- --exclude node_modules \
  --exclude .DS_Store \
+ --exclude .next \
+ --exclude node_modules \
  ~/Documents/ \
  /Volumes/DryKISS
 

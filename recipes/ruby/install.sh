@@ -11,7 +11,7 @@
 # rbenv install -l
 
 # Variables
-# VERSION=2.4.1
+# VERSION=2.5.0
 
 header "Ruby"
 
@@ -40,19 +40,18 @@ then
   # Remove User Gems folder
   rm -r ~/.gem
 
-  . ~/.bashrc
-
   # Configure Gems
   subheader "Install Ruby Version"
 
   # Upgrade Gems
-  gem update --no-ri --no-rdo --system
-  gem update --no-ri --no-rdo
+  gem update --system
+  gem update
   gem clean
 
   rbenv rehash
 
-  gem install --no-ri --no-rdoc "${GEMS[@]}"
+  gem install thor
+  gem install bundler
 
   rbenv rehash
 fi

@@ -14,15 +14,12 @@ then
   if ! has brew ; then
 
     log "Homebrew not installed.. installing"
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
     if [[ $? != 0 ]] ; then
       log "Homebrew download failed - Exiting"
       abort
     fi
-
-    log "Change ownership of /usr/local folder"
-    sudo chown -R `whoami` /usr/local
 
   else
 
@@ -48,6 +45,9 @@ then
 
   # Install Formula
   subheader "Install Formula"
+
+  # Install Fonts
+  brew tap homebrew/cask-fonts
 
   # Install Brews
   brew install "${BREWS[@]}"

@@ -24,7 +24,7 @@ function update() {
   rbenv rehash
 
   # Oh My ZSH
-  upgrade_oh_my_zsh
+  omz update
 }
 
 # Index external drive

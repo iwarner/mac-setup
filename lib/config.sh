@@ -12,7 +12,7 @@ RECIPES="$BASH_PATH"/recipes
 DOTFILES="$BASH_PATH"/dotfiles
 COMPUTER_NAME="DryKISS"
 
-export RUBY_VERSION=2.4.1
+export RUBY_VERSION=2.5.0
 
 SCRIPTS=(
   gcc            # Checks that XCode is installed
@@ -20,32 +20,33 @@ SCRIPTS=(
   font           # Install system fonts
   zsh            # ZSH is a better terminal
   oh-my-zsh      # Add some sugar for terminal operations - install code fonts
-  dock           # Configure the Mac
+  # dock           # Configure the Mac
   dotfiles       # Copy the dotfiles to the users home directory
-  ruby           # Installs an Ruby version control package
+  # ruby           # Installs an Ruby version control package
   node           # NVM Node version manager is required for NPM package manager
   ssh            # Copy SSH from dropbox to .ssh
   # hosts          # Update hosts files
   1password      # Installed from App Store
   # apache         # Web server
-  appcleaner     # App Cleaner removes unwanted applications
-  avg            # AVG Antivirus
-  clickup        # Project management
+  # appcleaner     # App Cleaner removes unwanted applications
+  # avg            # AVG Antivirus
+  # clickup        # Project management
   # docker         # Container
-  figma           # Graphics program
+  # figma           # Graphics program
   google-chrome  # Browser
-  imageoptim     # Image compression
-  mysql          # Relational database
+  # imageoptim     # Image compression
+  # mysql          # Relational database
   # ntfs         # Drive system
   # php          # Server side langauge
   postman        # API Tester
-  sequel-pro     # MySQL GUi
+  # sequel-pro     # MySQL GUi
   # sketch         # Graphics program
-  skype          # Communication
+  # skype          # Communication
   # transmit     # FTP client
   # virtual-box    # Required for IE Vms
   vlc            # Media player
   vscode         # IDE
+  # zoomus         # Video conferencing
   # osx            # OSX default settings
 )
 
@@ -61,13 +62,14 @@ export FONTS=(
 
 export BREWS=(
   curl
-  dockutil
+  # dockutil
   git
-  graphicsmagick
-  imagemagick
-  openssl
-  rsync
-  yarn
+  # graphicsmagick
+  # imagemagick
+  Nvm
+  # openssl
+  # rsync
+  # yarn
   wget
-  wifi-password
+  # wifi-password
 )

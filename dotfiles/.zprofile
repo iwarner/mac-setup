@@ -2,12 +2,16 @@
 # Place custom aliases within this file
 # http://www.cyberciti.biz/tips/bash-aliases-mac-centos-linux-unix.html
 
+
+# Localstack
+alias laws='docker run --network localstack --rm -it amazon/aws-cli --endpoint-url=http://localstack:4566'
+
 # GIT
 alias ggpull='ggl'
 alias ggpush='ggp'
 
 # Shortcuts
-alias dl="cd ~/Downloads"
+alias doc="cd ~/Documents"
 alias dt="cd ~/Desktop"
 alias h="history"
 alias j="jobs"

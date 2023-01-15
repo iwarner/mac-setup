@@ -14,5 +14,5 @@ read -p "Continue (y/Y) " -n 1 -r
 # Check Response
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-  brew cask install postman
+  brew install --cask postman
 fi

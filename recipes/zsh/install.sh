@@ -10,7 +10,7 @@ then
 
   # Install ZSH
   subheader "Brew Install ZSH"
-  brew update && brew install zsh
+  brew install zsh
 
   # Set the default shell
   subheader "Set default shell to ZSH"

@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-header "Fonts"
+header "Slack"
 
 read -p "Continue (y/Y) " -n 1 -r
 
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-  brew install --cask "${FONTS[@]}"
+  brew install --cask slack
 fi
