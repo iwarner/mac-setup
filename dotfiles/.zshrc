@@ -1,5 +1,8 @@
 # .zshrc DotFile
 
+# 1Password
+export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
+
 # Homebrew
 PATH=/usr/local/sbin:
 PATH=$PATH/usr/local/bin:

@@ -59,7 +59,7 @@ Edit the dotfiles file with your specific details i.e. .gitconfig username and e
 
 ## Backup
 
-Mac Book -> DryKISS Portable
+### Mac Book -> DryKISS Portable
 
 rsync --perms \
  --owner \
@@ -79,7 +79,7 @@ rsync --perms \
  ~/Documents/ \
  /Volumes/DryKISS
 
-DryKISS Portable -> Mac Book
+### DryKISS Portable -> Mac Book
 
 rsync --perms \
  --owner \
@@ -98,7 +98,7 @@ rsync --perms \
  /Volumes/DryKISS/ \
  ~/Documents
 
-iMac -> DryKISS Portable
+### iMac -> DryKISS Portable
 
 rsync --perms \
  --owner \
@@ -118,7 +118,7 @@ rsync --perms \
  ~/Documents/ \
  /Volumes/DryKISS
 
-DryKISS Portable -> iMac
+### DryKISS Portable -> iMac
 
 rsync --perms \
  --owner \

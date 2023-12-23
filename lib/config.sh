@@ -36,6 +36,7 @@ SCRIPTS=(
   google-chrome  # Browser
   # imageoptim     # Image compression
   # mysql          # Relational database
+  nord-vpn      # Nord VPN
   # ntfs         # Drive system
   # php          # Server side langauge
   postman        # API Tester
